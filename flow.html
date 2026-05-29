@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ご依頼の流れ | 星野畳店</title>
+  <meta name="description" content="星野畳店へのご依頼の流れを5ステップでご説明します。お問い合わせから納品まで、当日対応可能です。">
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="src/images/logo-mark.jpg" alt="星野畳店" class="header__logo-img">
+        <span class="header__logo-text">
+          <span class="header__logo-name">星野畳店</span>
+          <span class="header__logo-en">Hoshino Tatamiten</span>
+        </span>
+      </a>
+      <nav class="header__nav" aria-label="メインナビゲーション">
+        <a href="greeting.html">ごあいさつ</a>
+        <a href="price.html">料金表</a>
+        <a href="flow.html">ご依頼の流れ</a>
+        <a href="ex.html">施工事例</a>
+        <a href="calmo.html">CALMO（置き畳）</a>
+      </nav>
+
+      <div class="header__contact">
+        <a href="tel:048-711-3222" class="header__contact-tel">
+          📞 <span>048-711-3222</span>
+        </a>
+        <a href="contact.html" class="header__contact-btn header__contact-mail">
+          ✉ お問い合わせ
+        </a>
+        <a href="https://lin.ee/NYs3I5o" target="_blank" rel="noopener" class="header__contact-btn header__contact-line">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:5px;"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+          LINE問い合わせ
+        </a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <nav class="drawer" id="drawer">
+    <button class="drawer__close" id="drawerClose">✕</button>
+    <ul class="drawer__nav">
+      <li><a href="greeting.html">ごあいさつ・店舗紹介</a></li>
+      <li><a href="price.html">料金表</a></li>
+      <li><a href="flow.html">ご依頼の流れ</a></li>
+      <li><a href="ex.html">施工事例</a></li>
+      <li><a href="calmo.html">CALMOについて</a></li>
+      <li><a href="contact.html">お問い合わせ</a></li>
+    </ul>
+  </nav>
+
+  <div style="background:linear-gradient(135deg,#c8d8b0 0%,#e8e8d0 33%,#e0d4a0 66%,#c0d8c0 100%);padding:3rem 0 2rem;color:#2a3020;text-align:center;">
+    <div class="container">
+      <span style="font-family:var(--font-en);font-size:0.875rem;letter-spacing:0.1em;opacity:0.7;">How It Works</span>
+      <h1 style="font-family:var(--font-heading);font-size:1.75rem;margin-top:0.5rem;">ご依頼の流れ</h1>
+    </div>
+  </div>
+
+  <!-- 安心ポイント -->
+  <section class="section section-bg">
+    <div class="container">
+      <span class="section-title-en">Why Choose Us</span>
+      <h2 class="section-title">安心してお任せください</h2>
+      <div style="display:grid;grid-template-columns:1fr;gap:1rem;max-width:720px;margin:0 auto;">
+        <div style="background:#fff;border-radius:var(--radius-md);padding:1.25rem;border:1px solid var(--color-border);display:flex;gap:1rem;align-items:center;">
+          <div style="font-size:2rem;flex-shrink:0;">📅</div>
+          <div><strong style="color:var(--color-primary);">土日・祝日も対応</strong><br><span style="font-size:0.9rem;color:var(--color-text-sub);">営業時間8:00〜19:00。お仕事の方も安心してご依頼いただけます。</span></div>
+        </div>
+        <div style="background:#fff;border-radius:var(--radius-md);padding:1.25rem;border:1px solid var(--color-border);display:flex;gap:1rem;align-items:center;">
+          <div style="font-size:2rem;flex-shrink:0;">🛻</div>
+          <div><strong style="color:var(--color-primary);">当日納品可能</strong><br><span style="font-size:0.9rem;color:var(--color-text-sub);">朝お引取りして夕方にはお届け。1日で完了します。</span></div>
+        </div>
+        <div style="background:#fff;border-radius:var(--radius-md);padding:1.25rem;border:1px solid var(--color-border);display:flex;gap:1rem;align-items:center;">
+          <div style="font-size:2rem;flex-shrink:0;">📋</div>
+          <div><strong style="color:var(--color-primary);">見本帳持参・お見積り無料</strong><br><span style="font-size:0.9rem;color:var(--color-text-sub);">実際の畳サンプルをお持ちして、その場でご確認・お見積りします。</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5ステップ -->
+  <section class="section">
+    <div class="container">
+      <span class="section-title-en">Flow</span>
+      <h2 class="section-title">5つのステップ</h2>
+
+      <div style="max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:0;">
+
+        <!-- STEP 1 -->
+        <div style="display:flex;gap:1.5rem;padding-bottom:2rem;position:relative;">
+          <div style="flex-shrink:0;display:flex;flex-direction:column;align-items:center;">
+            <div style="width:56px;height:56px;background:var(--color-primary);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--font-en);font-size:1.25rem;font-weight:700;flex-shrink:0;">1</div>
+            <div style="width:2px;flex:1;background:var(--color-border);margin-top:8px;"></div>
+          </div>
+          <div style="padding-top:12px;padding-bottom:1rem;">
+            <div style="font-size:0.8rem;color:var(--color-accent);font-weight:700;letter-spacing:0.05em;margin-bottom:4px;">STEP 1</div>
+            <h3 style="font-family:var(--font-heading);font-size:1.25rem;margin-bottom:0.75rem;color:var(--color-text);">お問い合わせ</h3>
+            <p style="color:var(--color-text-sub);font-size:0.9375rem;line-height:1.8;">お電話またはお問い合わせフォームよりご連絡ください。<br>「どんなことが相談できるの？」という段階でも大歓迎です。</p>
+            <div style="margin-top:1rem;display:flex;gap:0.75rem;flex-wrap:wrap;">
+              <a href="tel:048-711-3222" class="header__contact-tel">
+                📞 <span>048-711-3222</span>
+              </a>
+              <a href="contact.html" class="header__contact-btn header__contact-mail">
+                ✉ お問い合わせ
+              </a>
+              <a href="https://lin.ee/NYs3I5o" target="_blank" rel="noopener" class="header__contact-btn header__contact-line">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:5px;"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+                LINE問い合わせ
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 2 -->
+        <div style="display:flex;gap:1.5rem;padding-bottom:2rem;position:relative;">
+          <div style="flex-shrink:0;display:flex;flex-direction:column;align-items:center;">
+            <div style="width:56px;height:56px;background:var(--color-primary);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--font-en);font-size:1.25rem;font-weight:700;">2</div>
+            <div style="width:2px;flex:1;background:var(--color-border);margin-top:8px;"></div>
+          </div>
+          <div style="padding-top:12px;padding-bottom:1rem;">
+            <div style="font-size:0.8rem;color:var(--color-accent);font-weight:700;letter-spacing:0.05em;margin-bottom:4px;">STEP 2</div>
+            <h3 style="font-family:var(--font-heading);font-size:1.25rem;margin-bottom:0.75rem;">ご訪問・お見積り</h3>
+            <p style="color:var(--color-text-sub);font-size:0.9375rem;line-height:1.8;">ご希望の日時にお伺いします。畳の見本帳を持参しますので、実際に素材・色・肌触りをご確認いただきながら選べます。お見積りなどにご納得いただいたのち、工事日を決定します。</p>
+          </div>
+        </div>
+
+        <!-- STEP 3 -->
+        <div style="display:flex;gap:1.5rem;padding-bottom:2rem;position:relative;">
+          <div style="flex-shrink:0;display:flex;flex-direction:column;align-items:center;">
+            <div style="width:56px;height:56px;background:var(--color-primary);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--font-en);font-size:1.25rem;font-weight:700;">3</div>
+            <div style="width:2px;flex:1;background:var(--color-border);margin-top:8px;"></div>
+          </div>
+          <div style="padding-top:12px;padding-bottom:1rem;">
+            <div style="font-size:0.8rem;color:var(--color-accent);font-weight:700;letter-spacing:0.05em;margin-bottom:4px;">STEP 3</div>
+            <h3 style="font-family:var(--font-heading);font-size:1.25rem;margin-bottom:0.75rem;">前日のご確認</h3>
+            <p style="color:var(--color-text-sub);font-size:0.9375rem;line-height:1.8;">工事前日に確認のご連絡をいたします。ご予定の変更などがある場合は事前にお知らせください。</p>
+          </div>
+        </div>
+
+        <!-- STEP 4 -->
+        <div style="display:flex;gap:1.5rem;padding-bottom:2rem;position:relative;">
+          <div style="flex-shrink:0;display:flex;flex-direction:column;align-items:center;">
+            <div style="width:56px;height:56px;background:var(--color-primary);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--font-en);font-size:1.25rem;font-weight:700;">4</div>
+            <div style="width:2px;flex:1;background:var(--color-border);margin-top:8px;"></div>
+          </div>
+          <div style="padding-top:12px;padding-bottom:1rem;">
+            <div style="font-size:0.8rem;color:var(--color-accent);font-weight:700;letter-spacing:0.05em;margin-bottom:4px;">STEP 4</div>
+            <h3 style="font-family:var(--font-heading);font-size:1.25rem;margin-bottom:0.75rem;">作業・納品</h3>
+            <p style="color:var(--color-text-sub);font-size:0.9375rem;line-height:1.8;"><strong style="color:var(--color-text);">朝にお引取りして、夕方までに納品</strong>いたします。施工中は畳が不在となりますが、1日で完了しますのでご安心ください。仕上がりをその場でご確認いただけます。</p>
+          </div>
+        </div>
+
+        <!-- STEP 5 -->
+        <div style="display:flex;gap:1.5rem;">
+          <div style="flex-shrink:0;display:flex;flex-direction:column;align-items:center;">
+            <div style="width:56px;height:56px;background:var(--color-accent);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--font-en);font-size:1.25rem;font-weight:700;">5</div>
+          </div>
+          <div style="padding-top:12px;">
+            <div style="font-size:0.8rem;color:var(--color-accent);font-weight:700;letter-spacing:0.05em;margin-bottom:4px;">STEP 5</div>
+            <h3 style="font-family:var(--font-heading);font-size:1.25rem;margin-bottom:0.75rem;">お支払い</h3>
+            <p style="color:var(--color-text-sub);font-size:0.9375rem;line-height:1.8;">納品時に現金でのお支払い、または後日お振込みにてお支払いいただけます。領収書を発行いたします。</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- よくある質問 -->
+  <section class="section section-bg">
+    <div class="container">
+      <span class="section-title-en">FAQ</span>
+      <h2 class="section-title">よくある質問</h2>
+      <div style="max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:1rem;">
+        <details style="background:#fff;border-radius:var(--radius-md);border:1px solid var(--color-border);padding:1.25rem;">
+          <summary style="font-weight:600;cursor:pointer;color:var(--color-primary);">畳替えはどのくらいの頻度でするものですか？</summary>
+          <p style="margin-top:0.75rem;font-size:0.9375rem;color:var(--color-text-sub);line-height:1.8;">一般的には、裏返しが2〜3年、表替えが5〜7年、新畳（全交換）が10〜15年が目安です。使用状況・畳の状態によって異なりますので、気になったらお気軽にご相談ください。</p>
+        </details>
+        <details style="background:#fff;border-radius:var(--radius-md);border:1px solid var(--color-border);padding:1.25rem;">
+          <summary style="font-weight:600;cursor:pointer;color:var(--color-primary);">見積もりは無料ですか？</summary>
+          <p style="margin-top:0.75rem;font-size:0.9375rem;color:var(--color-text-sub);line-height:1.8;">はい、お見積りは完全無料です。見本帳を持参してご自宅へお伺いし、実際の畳を確認した上でお見積りいたします。</p>
+        </details>
+        <details style="background:#fff;border-radius:var(--radius-md);border:1px solid var(--color-border);padding:1.25rem;">
+          <summary style="font-weight:600;cursor:pointer;color:var(--color-primary);">施工当日は何時から何時まで？</summary>
+          <p style="margin-top:0.75rem;font-size:0.9375rem;color:var(--color-text-sub);line-height:1.8;">朝8時頃にお引取りし、夕方18時頃までに納品いたします。正確な時間はご相談の上で決定します。</p>
+        </details>
+        <details style="background:#fff;border-radius:var(--radius-md);border:1px solid var(--color-border);padding:1.25rem;">
+          <summary style="font-weight:600;cursor:pointer;color:var(--color-primary);">対応エリアはどこですか？</summary>
+          <p style="margin-top:0.75rem;font-size:0.9375rem;color:var(--color-text-sub);line-height:1.8;">さいたま市を中心に、周辺市区町村にも対応しています。エリア外でもご相談可能ですので、まずはお問い合わせください。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== お問い合わせCTA ========== -->
+  <section class="cta" aria-label="お問い合わせ">
+    <div class="container">
+      <div class="cta__deco"><span>✦</span></div>
+      <h2 class="cta__title">まずはお気軽にご相談ください</h2>
+      <p class="cta__text">見積もり・ご相談は無料です。<br>畳の見本帳をお持ちしてご自宅へお伺いします。</p>
+      <p class="cta__hours">営業時間 8:00〜19:00（土日・祝日も対応可）</p>
+      <div class="cta__buttons">
+        <a href="tel:048-711-3222" class="header__contact-tel cta__contact-btn">
+          📞 <span>048-711-3222</span>
+        </a>
+        <a href="contact.html" class="header__contact-btn header__contact-mail cta__contact-btn">
+          ✉ お問い合わせ
+        </a>
+        <a href="https://lin.ee/NYs3I5o" target="_blank" rel="noopener" class="header__contact-btn header__contact-line cta__contact-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:5px;"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+          LINE問い合わせ
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div><p class="footer__brand-name">星野畳店</p><p class="footer__tagline">さいたま市で50年以上、地域とともに。</p></div>
+        <div>
+          <p class="footer__nav-title">Pages</p>
+          <ul class="footer__nav-list">
+            <li><a href="greeting.html">ごあいさつ</a></li>
+            <li><a href="price.html">料金表</a></li>
+            <li><a href="flow.html">ご依頼の流れ</a></li>
+            <li><a href="ex.html">施工事例</a></li>
+            <li><a href="calmo.html">CALMO（置き畳）</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__nav-title">Access</p>
+          <div class="footer__info">
+            <p>〒336-0022 埼玉県さいたま市南区白幡6-1-18</p>
+            <p>TEL: <a href="tel:048-711-3222" style="color:#aaa;">048-711-3222</a></p>
+            <p>8:00〜19:00（土日・祝日可）</p>
+            <p><a href="mailto:hoshinotatamiten@gmail.com" style="color:#aaa;">hoshinotatamiten@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom"><p>© 2025 星野畳店 All Rights Reserved.</p></div>
+    </div>
+  </footer>
+
+  <a href="tel:048-711-3222" class="btn-call-fixed">📞 電話で問い合わせる（無料）</a>
+  <script src="src/js/main.js"></script>
+</body>
+</html>

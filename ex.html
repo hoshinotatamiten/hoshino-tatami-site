@@ -1,0 +1,583 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>施工事例 | 星野畳店 - さいたま市の畳張替え</title>
+  <meta name="description" content="星野畳店の施工事例。さいたま市を中心に畳の表替え・新畳・襖・障子の施工実績をご紹介します。">
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="src/images/logo-mark.jpg" alt="星野畳店" class="header__logo-img">
+        <span class="header__logo-text">
+          <span class="header__logo-name">星野畳店</span>
+          <span class="header__logo-en">Hoshino Tatamiten</span>
+        </span>
+      </a>
+      <nav class="header__nav" aria-label="メインナビゲーション">
+        <a href="greeting.html">ごあいさつ</a>
+        <a href="price.html">料金表</a>
+        <a href="flow.html">ご依頼の流れ</a>
+        <a href="ex.html">施工事例</a>
+        <a href="calmo.html">CALMO（置き畳）</a>
+      </nav>
+
+      <div class="header__contact">
+        <a href="tel:048-711-3222" class="header__contact-tel">
+          📞 <span>048-711-3222</span>
+        </a>
+        <a href="contact.html" class="header__contact-btn header__contact-mail">
+          ✉ お問い合わせ
+        </a>
+        <a href="https://lin.ee/NYs3I5o" target="_blank" rel="noopener" class="header__contact-btn header__contact-line">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:5px;"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+          LINE問い合わせ
+        </a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <nav class="drawer" id="drawer">
+    <button class="drawer__close" id="drawerClose">✕</button>
+    <ul class="drawer__nav">
+      <li><a href="greeting.html">ごあいさつ・店舗紹介</a></li>
+      <li><a href="price.html">料金表</a></li>
+      <li><a href="flow.html">ご依頼の流れ</a></li>
+      <li><a href="ex.html">施工事例</a></li>
+      <li><a href="calmo.html">CALMOについて</a></li>
+      <li><a href="contact.html">お問い合わせ</a></li>
+    </ul>
+  </nav>
+
+  <div style="background:linear-gradient(135deg,#c8d8b0 0%,#e8e8d0 33%,#e0d4a0 66%,#c0d8c0 100%);padding:3rem 0 2rem;color:#2a3020;text-align:center;">
+    <div class="container">
+      <span style="font-family:var(--font-en);font-size:0.875rem;letter-spacing:0.1em;opacity:0.7;">Works</span>
+      <h1 style="font-family:var(--font-heading);font-size:1.75rem;margin-top:0.5rem;">施工事例</h1>
+    </div>
+  </div>
+
+  <!-- カテゴリフィルター -->
+  <section class="section">
+    <div class="container">
+
+      <!-- フィルターボタン -->
+      <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:2.5rem;" id="filterBtns">
+        <button class="filter-btn" data-filter="all"    onclick="filterCase(this,'all')"    style="padding:8px 20px;border-radius:100px;border:1.5px solid var(--color-primary);background:var(--color-primary);color:#fff;font-size:0.875rem;font-weight:600;cursor:pointer;">すべて</button>
+        <button class="filter-btn" data-filter="tatami" onclick="filterCase(this,'tatami')" style="padding:8px 20px;border-radius:100px;border:1.5px solid var(--color-primary);background:transparent;color:var(--color-primary);font-size:0.875rem;font-weight:600;cursor:pointer;">畳</button>
+        <button class="filter-btn" data-filter="fusuma" onclick="filterCase(this,'fusuma')" style="padding:8px 20px;border-radius:100px;border:1.5px solid var(--color-primary);background:transparent;color:var(--color-primary);font-size:0.875rem;font-weight:600;cursor:pointer;">襖</button>
+        <button class="filter-btn" data-filter="shoji"  onclick="filterCase(this,'shoji')"  style="padding:8px 20px;border-radius:100px;border:1.5px solid var(--color-primary);background:transparent;color:var(--color-primary);font-size:0.875rem;font-weight:600;cursor:pointer;">障子</button>
+        <button class="filter-btn" data-filter="calmo"  onclick="filterCase(this,'calmo')"  style="padding:8px 20px;border-radius:100px;border:1.5px solid var(--color-primary);background:transparent;color:var(--color-primary);font-size:0.875rem;font-weight:600;cursor:pointer;">CALMO</button>
+      </div>
+
+      <!-- =====================================================
+        【事例カードの追加方法】
+        1. 下の <article> ブロックを1つまるごとコピーする
+        2. data-category を変更 → tatami / fusuma / shoji / calmo
+        3. Before写真・After写真のファイル名を書き換える
+           　Afterが複数ある場合は <after-track> 内に <img> を追加するだけ
+        4. 施工情報・コメント・タグを書き換える
+      ===================================================== -->
+      <div class="cases__grid" id="caseGrid">
+
+        <!-- ▼▼▼ 事例09 ▼▼▼ -->
+        <article class="case-card" data-category="tatami calmo">
+          <div class="case-card__photos">
+            <!-- Before写真なし → ご依頼内容カード -->
+            <div class="case-card__photo-wrap" style="background:#C4788A;display:flex;flex-direction:column;justify-content:center;padding:1.4rem 1.1rem;">
+              <p style="color:rgba(255,255,255,0.65);font-size:0.62rem;font-weight:700;letter-spacing:0.08em;margin:0 0 0.7rem;">ご依頼内容</p>
+              <ul style="margin:0;padding:0;list-style:none;">
+                <li style="color:#fff;font-size:0.73rem;line-height:1.7;padding-left:0.9rem;position:relative;margin-bottom:0.2rem;">
+                  <span style="position:absolute;left:0;color:var(--color-accent);">・</span>小さい子供がいるので、クッション性のある薄い畳を敷きたい
+                </li>
+                <li style="color:#fff;font-size:0.73rem;line-height:1.7;padding-left:0.9rem;position:relative;margin-bottom:0.2rem;">
+                  <span style="position:absolute;left:0;color:var(--color-accent);">・</span>子供がごろごろできるスペースが欲しい
+                </li>
+                <li style="color:#fff;font-size:0.73rem;line-height:1.7;padding-left:0.9rem;position:relative;">
+                  <span style="position:absolute;left:0;color:var(--color-accent);">・</span>育児や洗濯物を畳むなど、床に座って過ごせる場所にしたい
+                </li>
+              </ul>
+            </div>
+            <!-- After（スライダー・2枚） -->
+            <div class="case-card__photo-wrap case-card__after-slider">
+              <span class="case-card__label case-card__label--after">After</span>
+              <div class="after-track">
+                <img src="src/images/スクリーンショット 2026-05-22 115941_cleanup.png" alt="施工後① フローリングへの置き畳 ダイケン清流乳白色" loading="lazy">
+                <img src="src/images/スクリーンショット 2026-05-22 115955_cleanup.png" alt="施工後② フローリングへの置き畳 ダイケン清流乳白色" loading="lazy">
+              </div>
+              <button class="after-btn after-btn--prev" aria-label="前の写真">‹</button>
+              <button class="after-btn after-btn--next" aria-label="次の写真">›</button>
+              <span class="after-count"></span>
+            </div>
+          </div>
+          <div class="case-card__body">
+            <div class="case-card__meta">
+              <span>📍 さいたま市見沼区・マンション</span>
+              <span>✨ ダイケン健やかおもて・清流No.10・乳白色（82cm角・厚み15mm）</span>
+            </div>
+            <p class="case-card__comment">フローリングで直にゴロゴロするには固いので、クッション性のある置き畳をオーダー頂きました。床に座ってくつろぎたい・落ち着きたいというご要望は今でも多くのお客様からお聞きします。洋間に和の空間をコーディネートするお手伝いができて嬉しく思います。お部屋に敷いて間もなく、お子様が畳の上をゴロゴロしていたのが印象的でした。</p>
+            <div class="case-card__tags">
+              <span class="tag">#置き畳</span><span class="tag">#ダイケン</span><span class="tag">#清流</span><span class="tag">#乳白色</span><span class="tag">#縁なし</span><span class="tag">#子育て</span><span class="tag">#CALMO</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ▼▼▼ 事例08 ▼▼▼ -->
+        <article class="case-card" data-category="tatami">
+          <div class="case-card__photos">
+            <!-- Before（1枚） -->
+            <div class="case-card__photo-wrap">
+              <span class="case-card__label case-card__label--before">Before</span>
+              <img src="src/images/スクリーンショット 2026-05-22 114603_cleanup.png" alt="施工前 さいたま市大宮区 小上がり畳コーナー" loading="lazy">
+            </div>
+            <!-- After（スライダー・3枚） -->
+            <div class="case-card__photo-wrap case-card__after-slider">
+              <span class="case-card__label case-card__label--after">After</span>
+              <div class="after-track">
+                <img src="src/images/スクリーンショット 2026-05-22 114503_cleanup.png" alt="施工後① さいたま市大宮区 小上がり畳コーナー" loading="lazy">
+                <img src="src/images/スクリーンショット 2026-05-22 114520_cleanup.png" alt="施工後② さいたま市大宮区 小上がり畳コーナー" loading="lazy">
+                <img src="src/images/スクリーンショット 2026-05-22 114547_cleanup.png" alt="施工後③ さいたま市大宮区 小上がり畳コーナー" loading="lazy">
+              </div>
+              <button class="after-btn after-btn--prev" aria-label="前の写真">‹</button>
+              <button class="after-btn after-btn--next" aria-label="次の写真">›</button>
+              <span class="after-count"></span>
+            </div>
+          </div>
+          <div class="case-card__body">
+            <div class="case-card__meta">
+              <span>📍 さいたま市大宮区・マンション</span>
+              <span>✨ ダイケン健やかおもて・清流・墨染め色</span>
+            </div>
+            <p class="case-card__comment">マンションの1部屋フルリフォームの物件です。洋間だったスペースに小上がりスペースの枠を作り、そこに縁なしの畳を収めるお仕事でした。黒の畳でもおしゃれでかっこいいですね。素敵な畳コーナースペースができあがりました。</p>
+            <div class="case-card__tags">
+              <span class="tag">#畳</span><span class="tag">#新畳</span><span class="tag">#ダイケン</span><span class="tag">#清流</span><span class="tag">#墨染め色</span><span class="tag">#縁なし</span><span class="tag">#小上がり</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ▼▼▼ 事例07 ▼▼▼ -->
+        <article class="case-card" data-category="tatami fusuma shoji">
+          <div class="case-card__photos">
+            <!-- Before（1枚） -->
+            <div class="case-card__photo-wrap">
+              <span class="case-card__label case-card__label--before">Before</span>
+              <img src="src/images/スクリーンショット 2026-05-22 113051_cleanup.png" alt="施工前 さいたま市緑区 畳・襖・障子張り替え" loading="lazy">
+            </div>
+            <!-- After（スライダー・3枚） -->
+            <div class="case-card__photo-wrap case-card__after-slider">
+              <span class="case-card__label case-card__label--after">After</span>
+              <div class="after-track">
+                <img src="src/images/スクリーンショット 2026-05-22 113135_cleanup.png" alt="施工後① さいたま市緑区 畳・襖・障子張り替え" loading="lazy">
+                <img src="src/images/スクリーンショット 2026-05-22 113152_cleanup.png" alt="施工後② さいたま市緑区 畳・襖・障子張り替え" loading="lazy">
+                <img src="src/images/スクリーンショット 2026-05-22 113304_cleanup.png" alt="施工後③ さいたま市緑区 畳・襖・障子張り替え" loading="lazy">
+              </div>
+              <button class="after-btn after-btn--prev" aria-label="前の写真">‹</button>
+              <button class="after-btn after-btn--next" aria-label="次の写真">›</button>
+              <span class="after-count"></span>
+            </div>
+          </div>
+          <div class="case-card__body">
+            <div class="case-card__meta">
+              <span>📍 さいたま市緑区・戸建て</span>
+              <span>🌿 国産表替え・星美表 いろどり</span>
+            </div>
+            <p class="case-card__comment">6畳と8畳の和室の畳・襖・障子の張り替えをさせていただきました。年数が経っていたため、畳・襖・障子ともに色焼けして汚れもついてしまっていました。張り替え後、部屋が明るくなったと大変喜んでいただきました。</p>
+            <div class="case-card__tags">
+              <span class="tag">#畳</span><span class="tag">#表替え</span><span class="tag">#国産い草</span><span class="tag">#星美表いろどり</span><span class="tag">#襖</span><span class="tag">#障子</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ▼▼▼ 事例06 ▼▼▼ -->
+        <article class="case-card" data-category="tatami">
+          <div class="case-card__photos">
+            <!-- Before（写真 ＋ ご依頼内容オーバーレイ） -->
+            <div class="case-card__photo-wrap" style="position:relative;overflow:hidden;">
+              <span class="case-card__label case-card__label--before">Before</span>
+              <img src="src/images/スクリーンショット 2026-05-22 100546_cleanup.png" alt="施工前 さいたま市緑区 ベッド用畳" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
+              <!-- ご依頼内容オーバーレイ -->
+              <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,0.82));padding:1.6rem 0.75rem 0.55rem;z-index:2;pointer-events:none;">
+                <p style="color:rgba(255,255,255,0.7);font-size:0.62rem;font-weight:700;letter-spacing:0.08em;margin:0 0 0.3rem;">ご依頼内容</p>
+                <ul style="margin:0;padding:0;list-style:none;">
+                  <li style="color:#fff;font-size:0.72rem;line-height:1.6;padding-left:0.8rem;position:relative;">
+                    <span style="position:absolute;left:0;color:var(--color-accent);">・</span>マットレスが柔らかいので、その下に畳を敷きたい
+                  </li>
+                  <li style="color:#fff;font-size:0.72rem;line-height:1.6;padding-left:0.8rem;position:relative;">
+                    <span style="position:absolute;left:0;color:var(--color-accent);">・</span>腰の痛みが和らぐという口コミを見て検討
+                  </li>
+                  <li style="color:#fff;font-size:0.72rem;line-height:1.6;padding-left:0.8rem;position:relative;">
+                    <span style="position:absolute;left:0;color:var(--color-accent);">・</span>ベッドに畳を敷くことができるか問い合わせ
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- After（1枚） -->
+            <div class="case-card__photo-wrap">
+              <span class="case-card__label case-card__label--after">After</span>
+              <img src="src/images/スクリーンショット 2026-05-22 100530_cleanup.png" alt="施工後 さいたま市緑区 ベッド用畳" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
+            </div>
+          </div>
+          <div class="case-card__body">
+            <div class="case-card__meta">
+              <span>📍 さいたま市緑区・マンション</span>
+              <span>✨ セキスイ美草・市松ダークブラウン</span>
+            </div>
+            <p class="case-card__comment">お電話でのお問い合わせでした。一度お宅に訪問し、現状を把握しながらお客様のご希望をお聞きし、セキスイ美草の市松ダークブラウンを使用いたしました。ベッドは畳の規格より大きいため、畳を横に2枚使用しベッドのサイズに収まるよう仕上げました。寝心地も良くなったと、お客様に大変喜んでいただきました。</p>
+            <div class="case-card__tags">
+              <span class="tag">#畳</span><span class="tag">#新畳</span><span class="tag">#セキスイ</span><span class="tag">#美草</span><span class="tag">#市松ダークブラウン</span><span class="tag">#ベッド用畳</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ▼▼▼ 事例05 ▼▼▼ -->
+        <article class="case-card" data-category="tatami">
+          <div class="case-card__photos">
+            <!-- Before写真なし → ご依頼内容カード -->
+            <div class="case-card__photo-wrap" style="background:#7AAD8A;display:flex;flex-direction:column;justify-content:center;padding:1.4rem 1.1rem;">
+              <p style="color:rgba(255,255,255,0.65);font-size:0.62rem;font-weight:700;letter-spacing:0.08em;margin:0 0 0.7rem;">ご依頼内容</p>
+              <ul style="margin:0;padding:0;list-style:none;">
+                <li style="color:#fff;font-size:0.73rem;line-height:1.7;padding-left:0.9rem;position:relative;margin-bottom:0.2rem;">
+                  <span style="position:absolute;left:0;color:var(--color-accent);">・</span>新築マンション購入。和室を琉球畳風の畳にしたい
+                </li>
+                <li style="color:#fff;font-size:0.73rem;line-height:1.7;padding-left:0.9rem;position:relative;margin-bottom:0.2rem;">
+                  <span style="position:absolute;left:0;color:var(--color-accent);">・</span>丈夫で変色しないセキスイの市松グリーンを使用したい
+                </li>
+                <li style="color:#fff;font-size:0.73rem;line-height:1.7;padding-left:0.9rem;position:relative;">
+                  <span style="position:absolute;left:0;color:var(--color-accent);">・</span>引越し日時が決まっているので、それに合わせて工事を進めてほしい
+                </li>
+              </ul>
+            </div>
+            <!-- After（スライダー・4枚） -->
+            <div class="case-card__photo-wrap case-card__after-slider">
+              <span class="case-card__label case-card__label--after">After</span>
+              <div class="after-track">
+                <img src="src/images/スクリーンショット 2026-05-22 091925_cleanup.png" alt="施工後① さいたま市浦和区 セキスイ美草市松グリーン" loading="lazy">
+                <img src="src/images/スクリーンショット 2026-05-22 091943_cleanup.png" alt="施工後② さいたま市浦和区 セキスイ美草市松グリーン" loading="lazy">
+                <img src="src/images/スクリーンショット 2026-05-22 092020_cleanup.png" alt="施工後③ さいたま市浦和区 セキスイ美草市松グリーン" loading="lazy">
+                <img src="src/images/スクリーンショット 2026-05-22 092054_cleanup.png" alt="施工後④ さいたま市浦和区 セキスイ美草市松グリーン" loading="lazy">
+              </div>
+              <button class="after-btn after-btn--prev" aria-label="前の写真">‹</button>
+              <button class="after-btn after-btn--next" aria-label="次の写真">›</button>
+              <span class="after-count"></span>
+            </div>
+          </div>
+          <div class="case-card__body">
+            <div class="case-card__meta">
+              <span>📍 さいたま市浦和区・マンション</span>
+              <span>✨ セキスイ美草・市松グリーン</span>
+            </div>
+            <p class="case-card__comment">お客様のご希望で引越しの日時が決まっていたため、それに合わせて寸法を取り、施工・設置まで行いました。市松模様がとても素敵で、明るい和室になったと思います。新生活を楽しくスタートするお手伝いができて嬉しく思います。</p>
+            <div class="case-card__tags">
+              <span class="tag">#畳</span><span class="tag">#新畳</span><span class="tag">#セキスイ</span><span class="tag">#美草</span><span class="tag">#市松グリーン</span><span class="tag">#琉球畳風</span><span class="tag">#縁なし</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ▼▼▼ 事例04 ▼▼▼ -->
+        <article class="case-card" data-category="tatami">
+          <div class="case-card__photos">
+            <!-- Before（スライダー・2枚：お庭・床の間 ＋ ご依頼内容オーバーレイ） -->
+            <div class="case-card__photo-wrap case-card__before-slider">
+              <div class="after-track">
+                <img src="src/images/スクリーンショット 2026-05-22 084250_cleanup.png" alt="施工前① さいたま市南区 床の間" loading="lazy">
+                <img src="src/images/スクリーンショット 2026-05-22 084307_cleanup.png" alt="施工前② さいたま市南区 お庭" loading="lazy">
+              </div>
+              <button class="after-btn after-btn--prev" aria-label="前の写真">‹</button>
+              <button class="after-btn after-btn--next" aria-label="次の写真">›</button>
+              <span class="after-count"></span>
+              <!-- ご依頼内容オーバーレイ -->
+              <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,0.82));padding:1.6rem 0.75rem 0.55rem;z-index:2;pointer-events:none;">
+                <p style="color:rgba(255,255,255,0.7);font-size:0.62rem;font-weight:700;letter-spacing:0.08em;margin:0 0 0.3rem;">ご依頼内容</p>
+                <ul style="margin:0;padding:0;list-style:none;">
+                  <li style="color:#fff;font-size:0.72rem;line-height:1.6;padding-left:0.8rem;position:relative;">
+                    <span style="position:absolute;left:0;color:var(--color-accent);">・</span>8畳と6畳の続き間を表替えしたい
+                  </li>
+                  <li style="color:#fff;font-size:0.72rem;line-height:1.6;padding-left:0.8rem;position:relative;">
+                    <span style="position:absolute;left:0;color:var(--color-accent);">・</span>日焼けて色が変わってしまった
+                  </li>
+                  <li style="color:#fff;font-size:0.72rem;line-height:1.6;padding-left:0.8rem;position:relative;">
+                    <span style="position:absolute;left:0;color:var(--color-accent);">・</span>畳のササクレも気になるようになった
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- After（スライダー・3枚） -->
+            <div class="case-card__photo-wrap case-card__after-slider">
+              <span class="case-card__label case-card__label--after">After</span>
+              <div class="after-track">
+                <img src="src/images/スクリーンショット 2026-05-22 084104_cleanup.png" alt="施工後① さいたま市南区 続き間畳表替え" loading="lazy">
+                <img src="src/images/スクリーンショット 2026-05-22 084045_cleanup.png" alt="施工後② さいたま市南区 続き間畳表替え" loading="lazy">
+                <img src="src/images/スクリーンショット 2026-05-22 084008_cleanup.png" alt="施工後③ さいたま市南区 続き間畳表替え" loading="lazy">
+              </div>
+              <button class="after-btn after-btn--prev" aria-label="前の写真">‹</button>
+              <button class="after-btn after-btn--next" aria-label="次の写真">›</button>
+              <span class="after-count"></span>
+            </div>
+          </div>
+          <div class="case-card__body">
+            <div class="case-card__meta">
+              <span>📍 さいたま市南区・戸建て</span>
+              <span>🌿 国産表替え・星美表 いろどり</span>
+            </div>
+            <p class="case-card__comment">8畳と6畳の続き間の畳表替えをさせていただきました。伝統的な和室の空間を演出されていて、とても素敵なお部屋です。お庭もとてもお手入れされていて、素敵です。床の間の熊の置物もかわいらしいですね。</p>
+            <div class="case-card__tags">
+              <span class="tag">#畳</span><span class="tag">#表替え</span><span class="tag">#国産い草</span><span class="tag">#星美表いろどり</span><span class="tag">#続き間</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ▼▼▼ 事例03 ▼▼▼ -->
+        <article class="case-card" data-category="tatami">
+          <div class="case-card__photos">
+            <!-- Before（スライダー・2枚） -->
+            <div class="case-card__photo-wrap case-card__before-slider">
+              <span class="case-card__label case-card__label--before">Before</span>
+              <div class="after-track">
+                <img src="src/images/スクリーンショット 2026-05-22 080807_cleanup_cleanup.png" alt="施工前① さいたま市南区 縁側畳表替え" loading="lazy">
+                <img src="src/images/スクリーンショット 2026-05-22 080827_cleanup.png" alt="施工前② さいたま市南区 縁側畳表替え" loading="lazy">
+              </div>
+              <button class="after-btn after-btn--prev" aria-label="前の写真">‹</button>
+              <button class="after-btn after-btn--next" aria-label="次の写真">›</button>
+              <span class="after-count"></span>
+            </div>
+            <!-- After（スライダー・2枚） -->
+            <div class="case-card__photo-wrap case-card__after-slider">
+              <span class="case-card__label case-card__label--after">After</span>
+              <div class="after-track">
+                <img src="src/images/スクリーンショット 2026-05-22 080851_cleanup.png" alt="施工後① さいたま市南区 縁側畳表替え" loading="lazy">
+                <img src="src/images/スクリーンショット 2026-05-22 080905_cleanup.png" alt="施工後② さいたま市南区 縁側畳表替え" loading="lazy">
+              </div>
+              <button class="after-btn after-btn--prev" aria-label="前の写真">‹</button>
+              <button class="after-btn after-btn--next" aria-label="次の写真">›</button>
+              <span class="after-count"></span>
+            </div>
+          </div>
+          <div class="case-card__body">
+            <div class="case-card__meta">
+              <span>📍 さいたま市南区・戸建て</span>
+              <span>🌿 国産表替え・星美表 いろどり</span>
+            </div>
+            <p class="case-card__comment">茶室とお庭の間にある縁側の廊下に、畳の上敷きゴザを敷きたいというご依頼。柱なども寸法を測り、ぴったりと収めることができました。</p>
+            <div class="case-card__tags">
+              <span class="tag">#畳</span><span class="tag">#表替え</span><span class="tag">#国産い草</span><span class="tag">#星美表いろどり</span><span class="tag">#縁側</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ▼▼▼ 事例02 ▼▼▼ -->
+        <article class="case-card" data-category="tatami">
+          <div class="case-card__photos">
+            <!-- Before（固定） -->
+            <div class="case-card__photo-wrap">
+              <span class="case-card__label case-card__label--before">Before</span>
+              <img src="src/images/スクリーンショット 2026-05-22 071747_cleanup.png" alt="施工前 さいたま市南区 ダイケン表替え" loading="lazy">
+            </div>
+            <!-- After（スライダー） -->
+            <div class="case-card__photo-wrap case-card__after-slider">
+              <span class="case-card__label case-card__label--after">After</span>
+              <div class="after-track">
+                <img src="src/images/スクリーンショット 2026-05-22 071834_cleanup.png" alt="施工後① さいたま市南区 ダイケン表替え" loading="lazy">
+                <img src="src/images/スクリーンショット 2026-05-22 071855_cleanup.png" alt="施工後② さいたま市南区 ダイケン表替え" loading="lazy">
+                <img src="src/images/スクリーンショット 2026-05-22 071914_cleanup.png" alt="施工後③ さいたま市南区 ダイケン表替え" loading="lazy">
+              </div>
+              <button class="after-btn after-btn--prev" aria-label="前の写真">‹</button>
+              <button class="after-btn after-btn--next" aria-label="次の写真">›</button>
+              <span class="after-count"></span>
+            </div>
+          </div>
+          <div class="case-card__body">
+            <div class="case-card__meta">
+              <span>📍 さいたま市南区・戸建て</span>
+              <span>✨ ダイケン健やかおもて・清流・亜麻色</span>
+            </div>
+            <p class="case-card__comment">気になっていた和室をリフォーム。日が当たっても変色しないダイケン表をご希望。建具が茶系のため畳の色も同じ茶系で統一し、落ち着きのある素敵なお部屋に生まれ変わりました。</p>
+            <div class="case-card__tags">
+              <span class="tag">#畳</span><span class="tag">#表替え</span><span class="tag">#ダイケン</span><span class="tag">#清流</span><span class="tag">#亜麻色</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ▼▼▼ 事例01 ▼▼▼ -->
+        <article class="case-card" data-category="tatami">
+          <div class="case-card__photos">
+            <!-- Before（固定） -->
+            <div class="case-card__photo-wrap">
+              <span class="case-card__label case-card__label--before">Before</span>
+              <img src="src/images/スクリーンショット 2026-05-22 080125_cleanup.png" alt="施工前 さいたま市中央区 畳表替え" loading="lazy">
+            </div>
+            <!-- After（スライダー）※ <img>を増やすだけでAfter写真を追加できます -->
+            <div class="case-card__photo-wrap case-card__after-slider">
+              <span class="case-card__label case-card__label--after">After</span>
+              <div class="after-track">
+                <img src="src/images/スクリーンショット 2026-05-21 172308_cleanup.png" alt="施工後① さいたま市中央区 畳表替え" loading="lazy">
+                <img src="src/images/スクリーンショット 2026-05-21 172457_cleanup.png" alt="施工後② さいたま市中央区 畳表替え" loading="lazy">
+              </div>
+              <button class="after-btn after-btn--prev" aria-label="前の写真">‹</button>
+              <button class="after-btn after-btn--next" aria-label="次の写真">›</button>
+              <span class="after-count"></span>
+            </div>
+          </div>
+          <div class="case-card__body">
+            <div class="case-card__meta">
+              <span>📍 さいたま市中央区・戸建て</span>
+              <span>🌿 国産表替え・星美表 いろどり</span>
+            </div>
+            <p class="case-card__comment">床の間のある素敵な和室を畳替えしました。無地の縁が際立って素敵なお部屋になりました。</p>
+            <div class="case-card__tags">
+              <span class="tag">#畳</span><span class="tag">#表替え</span><span class="tag">#国産い草</span><span class="tag">#星美表いろどり</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 事例は写真が揃い次第、上記のブロックをコピーして追加してください -->
+
+      </div>
+
+      <p style="font-size:0.82rem;color:var(--color-text-sub);text-align:center;margin-top:2rem;">※ 写真は実際の施工写真です。随時更新しています。</p>
+    </div>
+  </section>
+
+  <!-- ========== お問い合わせCTA ========== -->
+  <section class="cta" aria-label="お問い合わせ">
+    <div class="container">
+      <div class="cta__deco"><span>✦</span></div>
+      <h2 class="cta__title">まずはお気軽にご相談ください</h2>
+      <p class="cta__text">見積もり・ご相談は無料です。<br>畳の見本帳をお持ちしてご自宅へお伺いします。</p>
+      <p class="cta__hours">営業時間 8:00〜19:00（土日・祝日も対応可）</p>
+      <div class="cta__buttons">
+        <a href="tel:048-711-3222" class="header__contact-tel cta__contact-btn">
+          📞 <span>048-711-3222</span>
+        </a>
+        <a href="contact.html" class="header__contact-btn header__contact-mail cta__contact-btn">
+          ✉ お問い合わせ
+        </a>
+        <a href="https://lin.ee/NYs3I5o" target="_blank" rel="noopener" class="header__contact-btn header__contact-line cta__contact-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:5px;"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+          LINE問い合わせ
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div><p class="footer__brand-name">星野畳店</p><p class="footer__tagline">さいたま市で50年以上、地域とともに。</p></div>
+        <div>
+          <p class="footer__nav-title">Pages</p>
+          <ul class="footer__nav-list">
+            <li><a href="greeting.html">ごあいさつ</a></li>
+            <li><a href="price.html">料金表</a></li>
+            <li><a href="flow.html">ご依頼の流れ</a></li>
+            <li><a href="ex.html">施工事例</a></li>
+            <li><a href="calmo.html">CALMO（置き畳）</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__nav-title">Access</p>
+          <div class="footer__info">
+            <p>〒336-0022 埼玉県さいたま市南区白幡6-1-18</p>
+            <p>TEL: <a href="tel:048-711-3222" style="color:#aaa;">048-711-3222</a></p>
+            <p>8:00〜19:00（土日・祝日可）</p>
+            <p><a href="mailto:hoshinotatamiten@gmail.com" style="color:#aaa;">hoshinotatamiten@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom"><p>© 2025 星野畳店 All Rights Reserved.</p></div>
+    </div>
+  </footer>
+
+  <div class="btn-call-fixed">
+    <a href="tel:048-711-3222" class="btn-call-fixed__tel">📞 048-711-3222</a>
+    <a href="contact.html" class="btn-call-fixed__mail">✉ お問い合わせ</a>
+    <a href="https://lin.ee/NYs3I5o" target="_blank" rel="noopener" class="btn-call-fixed__line">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:4px;"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>LINE
+    </a>
+  </div>
+  <!-- ライトボックス -->
+  <div id="lightbox" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.88);z-index:9999;align-items:center;justify-content:center;">
+    <img id="lightbox-img" src="" alt="" style="max-width:92%;max-height:90vh;object-fit:contain;border-radius:6px;box-shadow:0 8px 40px rgba(0,0,0,0.6);">
+    <button onclick="closeLightbox()" aria-label="閉じる" style="position:absolute;top:1rem;right:1.5rem;background:none;border:none;color:#fff;font-size:2.2rem;cursor:pointer;line-height:1;padding:0.2rem 0.5rem;">✕</button>
+  </div>
+
+  <script src="src/js/main.js"></script>
+  <script>
+    /* ---- フィルター ---- */
+    function filterCase(btn, category) {
+      document.querySelectorAll('.filter-btn').forEach(b => {
+        b.style.background = 'transparent';
+        b.style.color = 'var(--color-primary)';
+      });
+      btn.style.background = 'var(--color-primary)';
+      btn.style.color = '#fff';
+      document.querySelectorAll('.case-card').forEach(card => {
+        card.style.display =
+          (category === 'all' || card.dataset.category.includes(category)) ? '' : 'none';
+      });
+    }
+
+    /* ---- Before/Afterスライダー（ページ内の全カードに対応） ---- */
+    document.querySelectorAll('.case-card__after-slider, .case-card__before-slider').forEach(slider => {
+      const track  = slider.querySelector('.after-track');
+      const imgs   = track.querySelectorAll('img');
+      const count  = slider.querySelector('.after-count');
+      const btnP   = slider.querySelector('.after-btn--prev');
+      const btnN   = slider.querySelector('.after-btn--next');
+      let cur = 0;
+
+      // After写真が1枚なら矢印を非表示
+      if (imgs.length <= 1) {
+        if (btnP) btnP.style.display = 'none';
+        if (btnN) btnN.style.display = 'none';
+        if (count) count.style.display = 'none';
+        return;
+      }
+
+      function goTo(n) {
+        cur = (n + imgs.length) % imgs.length;
+        track.style.transform = `translateX(-${cur * 100}%)`;
+        if (count) count.textContent = `${cur + 1} / ${imgs.length}`;
+      }
+
+      goTo(0);
+      if (btnP) btnP.addEventListener('click', (e) => { e.stopPropagation(); goTo(cur - 1); });
+      if (btnN) btnN.addEventListener('click', (e) => { e.stopPropagation(); goTo(cur + 1); });
+    });
+
+    /* ---- ライトボックス ---- */
+    const lb    = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lightbox-img');
+
+    function openLightbox(src, alt) {
+      lbImg.src = src;
+      lbImg.alt = alt;
+      lb.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      lb.style.display = 'none';
+      document.body.style.overflow = '';
+    }
+
+    // 全ての施工事例写真にクリックで拡大を付ける
+    document.querySelectorAll('.case-card__photo-wrap img').forEach(function(img) {
+      img.style.cursor = 'zoom-in';
+      img.addEventListener('click', function(e) {
+        e.stopPropagation();
+        openLightbox(this.src, this.alt);
+      });
+    });
+
+    lb.addEventListener('click', closeLightbox);
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
+</body>
+</html>

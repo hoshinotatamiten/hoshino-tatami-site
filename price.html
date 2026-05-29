@@ -1,0 +1,1151 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>料金表 | 星野畳店 - さいたま市の畳張替え</title>
+  <meta name="description" content="星野畳店の畳表替え・新畳・裏返し・襖・障子の料金表。国産・中国産の価格を掲載。さいたま市南区。">
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="src/images/logo-mark.jpg" alt="星野畳店" class="header__logo-img">
+        <span class="header__logo-text">
+          <span class="header__logo-name">星野畳店</span>
+          <span class="header__logo-en">Hoshino Tatamiten</span>
+        </span>
+      </a>
+      <nav class="header__nav" aria-label="メインナビゲーション">
+        <a href="greeting.html">ごあいさつ</a>
+        <a href="price.html">料金表</a>
+        <a href="flow.html">ご依頼の流れ</a>
+        <a href="ex.html">施工事例</a>
+        <a href="calmo.html">CALMO（置き畳）</a>
+      </nav>
+
+      <div class="header__contact">
+        <a href="tel:048-711-3222" class="header__contact-tel">
+          📞 <span>048-711-3222</span>
+        </a>
+        <a href="contact.html" class="header__contact-btn header__contact-mail">
+          ✉ お問い合わせ
+        </a>
+        <a href="https://lin.ee/NYs3I5o" target="_blank" rel="noopener" class="header__contact-btn header__contact-line">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:5px;"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+          LINE問い合わせ
+        </a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <nav class="drawer" id="drawer">
+    <button class="drawer__close" id="drawerClose">✕</button>
+    <ul class="drawer__nav">
+      <li><a href="greeting.html">ごあいさつ・店舗紹介</a></li>
+      <li><a href="price.html">料金表</a></li>
+      <li><a href="flow.html">ご依頼の流れ</a></li>
+      <li><a href="ex.html">施工事例</a></li>
+      <li><a href="calmo.html">CALMOについて</a></li>
+      <li><a href="contact.html">お問い合わせ</a></li>
+    </ul>
+  </nav>
+
+  <div style="background:linear-gradient(135deg,#c8d8b0 0%,#e8e8d0 33%,#e0d4a0 66%,#c0d8c0 100%);padding:3rem 0 2rem;color:#2a3020;text-align:center;">
+    <div class="container">
+      <span style="font-family:var(--font-en);font-size:0.875rem;letter-spacing:0.1em;opacity:0.8;">Price List</span>
+      <h1 style="font-family:var(--font-heading);font-size:1.75rem;margin-top:0.5rem;">料金表</h1>
+    </div>
+  </div>
+
+  <!-- ジャンプナビ -->
+  <nav style="background:#fff;border-bottom:1px solid var(--color-border);position:sticky;top:64px;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+    <div style="display:flex;flex-wrap:wrap;gap:0.5rem;padding:0.6rem 1rem;justify-content:center;">
+      <a href="#omote" style="display:inline-flex;align-items:center;gap:0.3rem;padding:0.4rem 0.9rem;border-radius:999px;background:var(--color-surface);border:1px solid var(--color-border);color:var(--color-text);font-size:0.8rem;font-weight:600;text-decoration:none;font-family:var(--font-body);white-space:nowrap;transition:background 0.2s,color 0.2s;" onmouseover="this.style.background='var(--color-primary)';this.style.color='#fff';this.style.borderColor='var(--color-primary)';" onmouseout="this.style.background='var(--color-surface)';this.style.color='var(--color-text)';this.style.borderColor='var(--color-border)';">🌿 畳料金表</a>
+      <a href="#daiken-sekisui" style="display:inline-flex;align-items:center;gap:0.3rem;padding:0.4rem 0.9rem;border-radius:999px;background:var(--color-surface);border:1px solid var(--color-border);color:var(--color-text);font-size:0.8rem;font-weight:600;text-decoration:none;font-family:var(--font-body);white-space:nowrap;transition:background 0.2s,color 0.2s;" onmouseover="this.style.background='var(--color-primary)';this.style.color='#fff';this.style.borderColor='var(--color-primary)';" onmouseout="this.style.background='var(--color-surface)';this.style.color='var(--color-text)';this.style.borderColor='var(--color-border)';">✨ ダイケン・セキスイ</a>
+      <a href="#wannyan" style="display:inline-flex;align-items:center;gap:0.3rem;padding:0.4rem 0.9rem;border-radius:999px;background:var(--color-surface);border:1px solid var(--color-border);color:var(--color-text);font-size:0.8rem;font-weight:600;text-decoration:none;font-family:var(--font-body);white-space:nowrap;transition:background 0.2s,color 0.2s;" onmouseover="this.style.background='var(--color-primary)';this.style.color='#fff';this.style.borderColor='var(--color-primary)';" onmouseout="this.style.background='var(--color-surface)';this.style.color='var(--color-text)';this.style.borderColor='var(--color-border)';">🐾 わんにゃんスマイル畳</a>
+      <a href="#ryukyu" style="display:inline-flex;align-items:center;gap:0.3rem;padding:0.4rem 0.9rem;border-radius:999px;background:var(--color-surface);border:1px solid var(--color-border);color:var(--color-text);font-size:0.8rem;font-weight:600;text-decoration:none;font-family:var(--font-body);white-space:nowrap;transition:background 0.2s,color 0.2s;" onmouseover="this.style.background='var(--color-primary)';this.style.color='#fff';this.style.borderColor='var(--color-primary)';" onmouseout="this.style.background='var(--color-surface)';this.style.color='var(--color-text)';this.style.borderColor='var(--color-border)';">🏯 琉球畳</a>
+      <a href="#fusuma" style="display:inline-flex;align-items:center;gap:0.3rem;padding:0.4rem 0.9rem;border-radius:999px;background:var(--color-surface);border:1px solid var(--color-border);color:var(--color-text);font-size:0.8rem;font-weight:600;text-decoration:none;font-family:var(--font-body);white-space:nowrap;transition:background 0.2s,color 0.2s;" onmouseover="this.style.background='var(--color-primary)';this.style.color='#fff';this.style.borderColor='var(--color-primary)';" onmouseout="this.style.background='var(--color-surface)';this.style.color='var(--color-text)';this.style.borderColor='var(--color-border)';">🚪 襖・障子</a>
+    </div>
+  </nav>
+
+  <!-- 各部名称＋3選 2カラム -->
+  <section class="section section-bg">
+    <div class="container">
+      <span class="section-title-en">Guide</span>
+      <h2 class="section-title">畳について知る</h2>
+      <br>
+      <div style="display:flex;gap:3rem;align-items:flex-start;flex-wrap:wrap;max-width:1000px;margin:0 auto;">
+
+        <!-- 左：各部名称 -->
+        <div style="flex:0 0 260px;">
+          <h3 style="font-family:var(--font-heading);font-size:1rem;font-weight:700;color:var(--color-primary);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:2px solid var(--color-primary);">畳の各部名称</h3>
+          <div style="text-align:center;">
+            <img src="src/images/tatami-parts.jpg" alt="畳の各部名称（畳縁・畳表・畳床）" style="width:100%;height:auto;display:block;">
+            <p style="font-size:0.75rem;color:var(--color-text-sub);margin-top:0.4rem;">※畳の各材料の名称</p>
+          </div>
+          <div style="margin-top:1rem;display:flex;flex-direction:column;gap:0.6rem;">
+            <p style="font-size:0.8rem;color:var(--color-text-sub);line-height:1.7;">※畳表（たたみおもて）とは、イグサの茎で 　織ったござ。畳の表面に付けます。</p>
+            <p style="font-size:0.8rem;color:var(--color-text-sub);line-height:1.7;">※畳縁（たたみべり）とは、一般的に畳の長 　手方向に付けられる布のことです。</p>
+            <p style="font-size:0.8rem;color:var(--color-text-sub);line-height:1.7;">※畳床（たたみどこ）とは、畳の芯となる部 　分のことです。</p>
+          </div>
+        </div>
+
+        <!-- 右：3選 -->
+        <div style="flex:1;min-width:280px;">
+          <h3 style="font-family:var(--font-heading);font-size:1rem;font-weight:700;color:var(--color-primary);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:2px solid var(--color-primary);">畳を綺麗にする方法『3選』</h3>
+          <div style="display:flex;flex-direction:column;gap:0.75rem;">
+
+            <!-- 表替え -->
+            <div style="border:1px solid var(--color-border);border-radius:var(--radius-md);padding:1rem;background:#fff;">
+              <h4 style="font-family:var(--font-heading);font-size:0.95rem;font-weight:700;color:var(--color-text);margin-bottom:0.5rem;">表替え（おもてがえ）</h4>
+              <p style="font-size:0.8rem;color:var(--color-text-sub);line-height:1.7;margin-bottom:0.4rem;">※畳床は既存のものを使用し畳表と畳縁を新しくすることです。</p>
+              <p style="font-size:0.8rem;color:var(--color-secondary);font-weight:600;margin-bottom:0.2rem;">☆目安：裏返し後5年程度経過し、畳表の毛羽が衣服に付くようになった頃。</p>
+            </div>
+
+            <!-- 新規畳 -->
+            <div style="border:1px solid var(--color-border);border-radius:var(--radius-md);padding:1rem;background:#fff;">
+              <h4 style="font-family:var(--font-heading);font-size:0.95rem;font-weight:700;color:var(--color-text);margin-bottom:0.5rem;">新規畳（しんきたたみ）</h4>
+              <p style="font-size:0.8rem;color:var(--color-text-sub);line-height:1.7;margin-bottom:0.4rem;">※畳表だけでなく畳の本体である畳床ごと新しくすることです。</p>
+              <p style="font-size:0.8rem;color:var(--color-secondary);font-weight:600;margin-bottom:0.2rem;">☆目安：20年程経過し、歩くと極端に沈んだりぐにゃぐにゃと柔らかすぎる時。</p>
+            </div>
+
+            <!-- 裏返し -->
+            <div style="border:1px solid var(--color-border);border-radius:var(--radius-md);padding:1rem;background:#fff;">
+              <h4 style="font-family:var(--font-heading);font-size:0.95rem;font-weight:700;color:var(--color-text);margin-bottom:0.5rem;">裏返し（うらがえし）</h4>
+              <p style="font-size:0.8rem;color:var(--color-text-sub);line-height:1.7;margin-bottom:0.4rem;">※既存の畳表と畳縁を畳床からはがし、畳表の裏面を<br>　張り直すことです。畳床は既存のまま使用します。</p>
+              <p style="font-size:0.8rem;color:var(--color-secondary);font-weight:600;">☆目安：表替え後３〜５年頃。年数が経ちすぎるとシミが<br>　目立つため早めがおすすめ。</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="omote">
+    <div class="container">
+      <span class="section-title-en">Tatami</span>
+      <h2 class="section-title">畳　料金表</h2>
+
+      <div>
+
+        <div style="border-bottom:2px solid #3a3f6b;padding-bottom:0.4rem;margin-top:2rem;margin-bottom:1.25rem;">
+          <span style="font-family:var(--font-heading);font-size:1.1rem;font-weight:700;color:var(--color-text);">表替え</span>
+          <span style="font-size:0.82rem;color:var(--color-text-sub);margin-left:0.6rem;">（現在、畳表には日本産と中国産があります。）</span>
+        </div>
+
+        <!-- 国産 -->
+        <h3 style="font-family:var(--font-heading);font-size:1.1rem;font-weight:700;color:var(--color-white);background:var(--color-primary);padding:0.6rem 1.2rem;border-radius:var(--radius-sm);margin-bottom:0.75rem;">🌾 国産（日本産）・表替え</h3>
+          <p style="font-size:0.75rem;color:var(--color-text-sub);text-align:right;margin-bottom:0.3rem;">&#8592; 価格表は横にスクロールできます &#8594;</p>
+          <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+            <table style="width:100%;min-width:700px;border-collapse:collapse;font-size:0.85rem;background:#fff;white-space:nowrap;">
+              <thead>
+                <tr style="background:var(--color-surface);text-align:center;">
+                  <th style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);white-space:nowrap;">等級</th>
+                  <th style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);white-space:normal;">商品名</th>
+                  <th style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);white-space:nowrap;">い草の産地</th>
+                  <th style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);white-space:nowrap;">満足度・快適さ</th>
+                  <th style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);white-space:normal;">価格/1畳</th>
+                  <th style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);white-space:normal;">特徴・仕様</th>
+                  <th style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);white-space:normal;">おすすめポイント<br>お客様のメリット</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- 松星 -->
+                <tr style="vertical-align:middle;">
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);white-space:nowrap;text-align:center;font-weight:700;">超特選</td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);white-space:normal;text-align:center;font-weight:600;">星美表<br>（きらめき）<br><span style="display:inline-block;background:var(--color-accent);color:#fff;font-size:0.6rem;font-weight:700;padding:0.15rem 0.4rem;border-radius:999px;margin-top:0.2rem;white-space:nowrap;">至高の一枚</span></td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);white-space:normal;text-align:center;">熊本県</td>
+                  <td style="padding:1rem 0.6rem;border:1px solid var(--color-border);text-align:center;line-height:1.6;">
+                    <div style="color:#E8A000;font-size:0.9rem;">★★★★★</div>
+                    <div style="color:#E8A000;font-size:0.9rem;">★★★★★</div>
+                  </td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);white-space:normal;text-align:center;">
+                    <strong style="font-size:0.85rem;color:var(--color-text);">57,000円</strong><br>
+                    <span style="font-size:0.75rem;color:var(--color-text-sub);white-space:nowrap;">62,700円(税込)</span>
+                  </td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);white-space:normal;line-height:1.5;font-size:0.68rem;white-space:normal;">
+                    <span style="color:var(--color-secondary);font-weight:600;">国産超最高級品　世界一の畳表です。</span><br>
+                    <span style="white-space:nowrap;">・使用経糸(たていと)→ 麻麻（麻糸を2本使用）</span><br>
+                    ・い草の本数→約8000本<br>
+                    ・い草の長さ→約140ｃｍ
+                  </td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);white-space:normal;">
+                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.1rem;font-size:0.68rem;line-height:1.5;">
+                      <li>・日本が誇る最高級畳表です。</li>
+                      <li>・和室を超ランクアップさせたい方におすすめです。</li>
+                      <li>・色むらが全く無く月日が経つにつれ畳全体が綺麗な<br>　黄金色になっていきます。</li>
+                      <li>・見た目、座り心地、肌触りなどどれをとっても最高です。</li>
+                      <li>・30年以上使っていただける耐久性を持った畳表です。</li>
+                    </ul>
+                  </td>
+                </tr>
+                <!-- 新商品 -->
+                <tr style="vertical-align:middle;">
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);text-align:center;font-weight:700;">特選</td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);text-align:center;font-weight:600;">星美表<br>（かがやき）<br><span style="display:inline-block;background:var(--color-accent);color:#fff;font-size:0.6rem;font-weight:700;padding:0.15rem 0.4rem;border-radius:999px;margin-top:0.2rem;white-space:nowrap;">ちょっと贅沢</span></td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);text-align:center;">熊本県</td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);text-align:center;line-height:1.6;">
+                    <div style="color:#E8A000;font-size:0.9rem;">★★★★★</div>
+                    <div style="color:#E8A000;font-size:0.9rem;">★★★★★</div>
+                  </td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);text-align:center;">
+                    <strong style="font-size:0.85rem;color:var(--color-text);">30,000円</strong><br>
+                    <span style="font-size:0.75rem;color:var(--color-text-sub);white-space:nowrap;">33,000円(税込)</span>
+                  </td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);line-height:1.5;font-size:0.68rem;white-space:normal;">
+                    <span style="color:var(--color-secondary);font-weight:600;white-space:nowrap;">国産最高級品　職人が認めた、確かな輝きを持つ畳表です。</span><br>
+                    <span style="white-space:nowrap;">・使用経糸(たていと)→ 麻麻（麻糸を2本使用）</span><br>
+                    ・い草の本数→約8000本<br>
+                    ・い草の長さ→約140ｃｍ
+                  </td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);white-space:normal;">
+                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.1rem;font-size:0.68rem;line-height:1.5;">
+                      <li>・きらめきと同等の品質を誇る、職人こだわりの逸品です。</li>
+                      <li>・和室を最高級にランクアップさせたい方におすすめです。</li>
+                      <li style="white-space:nowrap;">・色むらが少なく、年月とともに美しい黄金色に変化していきます。</li>
+                      <li>・見た目、座り心地、肌触りなどきらめきに引けを取りません。</li>
+                      <li style="white-space:nowrap;">・当店の長年にわたる産地との信頼関係が、この価格を実現させました。</li>
+                      <li>・25年以上使っていただける耐久性を持った畳表です。</li>
+                    </ul>
+                  </td>
+                </tr>
+                <!-- 竹星 -->
+                <tr style="vertical-align:middle;background:#FFF8E8;">
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);white-space:normal;text-align:center;font-weight:700;">特上</td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);white-space:normal;text-align:center;font-weight:600;">星美表<br>（いろどり）<br><span style="display:inline-block;background:var(--color-accent);color:#fff;font-size:0.6rem;font-weight:700;padding:0.15rem 0.4rem;border-radius:999px;margin-top:0.2rem;white-space:nowrap;">人気No.1</span></td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);white-space:normal;text-align:center;">熊本県</td>
+                  <td style="padding:1rem 0.6rem;border:1px solid var(--color-border);text-align:center;line-height:1.6;">
+                    <div style="color:#E8A000;font-size:0.9rem;">★★★★</div>
+                    <div style="color:#E8A000;font-size:0.9rem;">★★★</div>
+                  </td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);white-space:normal;text-align:center;">
+                    <strong style="font-size:0.85rem;color:var(--color-text);">14,000円</strong><br>
+                    <span style="font-size:0.75rem;color:var(--color-text-sub);white-space:nowrap;">15,400円(税込)</span>
+                  </td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);white-space:normal;line-height:1.5;font-size:0.68rem;white-space:normal;">
+                    <span style="color:var(--color-secondary);font-weight:600;">国産高級品　当店人気Ｎｏ１の畳表です。</span><br>
+                    <span style="white-space:nowrap;">・使用経糸(たていと)→ 麻綿（麻糸と綿糸の2本を使用）</span><br>
+                    ・い草の本数→約7000本<br>
+                    ・い草の長さ→約130ｃｍ
+                  </td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);white-space:normal;">
+                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.1rem;font-size:0.68rem;line-height:1.5;">
+                      <li>・当店おすすめＮｏ１高級畳表です。</li>
+                      <li>・和室をグレードアップさせたい方におすすめです。</li>
+                      <li>・（松星）にも引けを取らず見た目、肌触り等も良く<br>　リラックス効果バツグンです。</li>
+                      <li>・20年以上使っていただける耐久性を持った畳表です。</li>
+                    </ul>
+                  </td>
+                </tr>
+                <!-- 梅星 -->
+                <tr style="vertical-align:middle;">
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);white-space:normal;text-align:center;font-weight:700;">上級</td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);white-space:normal;text-align:center;font-weight:600;">星美表<br>（ひかり）<br><span style="display:inline-block;background:var(--color-accent);color:#fff;font-size:0.6rem;font-weight:700;padding:0.15rem 0.4rem;border-radius:999px;margin-top:0.2rem;white-space:nowrap;">人気No.2</span></td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);white-space:normal;text-align:center;">熊本県</td>
+                  <td style="padding:1rem 0.6rem;border:1px solid var(--color-border);text-align:center;line-height:1.6;">
+                    <div style="color:#E8A000;font-size:0.9rem;">★★★★★</div>
+                  </td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);white-space:normal;text-align:center;">
+                    <strong style="font-size:0.85rem;color:var(--color-text);">10,000円</strong><br>
+                    <span style="font-size:0.75rem;color:var(--color-text-sub);white-space:nowrap;">11,000円(税込)</span>
+                  </td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);white-space:normal;line-height:1.5;font-size:0.68rem;white-space:normal;">
+                    <span style="color:var(--color-secondary);font-weight:600;">国産上級品　当店人気Ｎｏ２の畳表です。</span><br>
+                    <span style="white-space:nowrap;">・使用経糸(たていと)→ 綿綿（綿糸を2本使用）</span><br>
+                    ・い草の本数→約5000本<br>
+                    ・い草の長さ→約110ｃｍ
+                  </td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);white-space:normal;">
+                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.1rem;font-size:0.68rem;line-height:1.5;">
+                      <li>・当店人気Ｎｏ２畳表です。</li>
+                      <li style="white-space:nowrap;">・国産表に拘りがあり予算をなるべく抑えたい方におすすめです。</li>
+                      <li>・見た目も綺麗でより良いい草を使用している為、<br>　とてもステキな和室に仕上がります。</li>
+                      <li>・10年以上使っていただける耐久性を持った畳表です。</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        <!-- 中国産 -->
+        <h3 style="font-family:var(--font-heading);font-size:1.1rem;font-weight:700;color:var(--color-white);background:var(--color-primary);padding:0.6rem 1.2rem;border-radius:var(--radius-sm);margin-top:2rem;margin-bottom:0.75rem;">🌍 中国産・表替え</h3>
+          <p style="font-size:0.75rem;color:var(--color-text-sub);text-align:right;margin-bottom:0.3rem;">&#8592; 価格表は横にスクロールできます &#8594;</p>
+          <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+            <table style="width:100%;min-width:700px;border-collapse:collapse;font-size:0.85rem;background:#fff;white-space:nowrap;">
+              <thead>
+                <tr style="background:var(--color-surface);text-align:center;">
+                  <th style="padding:0.5rem 0.4rem;border:1px solid var(--color-border);white-space:nowrap;">等級</th>
+                  <th style="padding:0.5rem 0.4rem;border:1px solid var(--color-border);white-space:nowrap;">商品名</th>
+                  <th style="padding:0.5rem 0.4rem;border:1px solid var(--color-border);white-space:nowrap;">い草の産地</th>
+                  <th style="padding:0.5rem 0.4rem;border:1px solid var(--color-border);white-space:nowrap;">満足度・快適さ</th>
+                  <th style="padding:0.5rem 0.4rem;border:1px solid var(--color-border);white-space:nowrap;">価格/1畳</th>
+                  <th style="padding:0.5rem 0.4rem;border:1px solid var(--color-border);">特徴・仕様</th>
+                  <th style="padding:0.5rem 0.4rem;border:1px solid var(--color-border);">おすすめポイント<br>お客様のメリット</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- 春 -->
+                <tr style="vertical-align:middle;background:#FFF8E8;">
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);text-align:center;font-weight:700;white-space:nowrap;">特級</td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);text-align:center;font-weight:600;">春<br><span style="display:inline-block;background:var(--color-accent);color:#fff;font-size:0.6rem;font-weight:700;padding:0.15rem 0.4rem;border-radius:999px;margin-top:0.2rem;white-space:nowrap;">店主おすすめ</span></td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);text-align:center;">四川省</td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);text-align:center;line-height:1.6;">
+                    <div style="color:#E8A000;font-size:0.9rem;">★★★★★★</div>
+                  </td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);text-align:center;">
+                    <strong style="font-size:0.85rem;color:var(--color-text);">10,000円</strong><br>
+                    <span style="font-size:0.75rem;color:var(--color-text-sub);white-space:nowrap;">11,000円(税込)</span>
+                  </td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);line-height:1.5;font-size:0.68rem;white-space:normal;">
+                    <span style="color:var(--color-secondary);font-weight:600;white-space:nowrap;">中国産高級品　中国産人気Ｎｏ１畳表です。</span><br>
+                    <span style="white-space:nowrap;">・使用経糸(たていと)→ 麻綿（麻糸と綿糸の2本を使用）</span>
+                  </td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);white-space:normal;">
+                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.1rem;font-size:0.68rem;line-height:1.5;">
+                      <li style="white-space:nowrap;">・日本の生産者が中国四川の工場で作り上げている畳表です。</li>
+                      <li style="white-space:nowrap;">・国産品（いろどり）のワンランク下の位置付けになります。</li>
+                      <li>・国産のい草より1本1本が太いので肉厚感が増して<br>　しっかりとした仕上がりになっています。</li>
+                      <li style="white-space:nowrap;">・国産表に引けを取らない丈夫さと綺麗な見た目を兼ね備えた畳表です。</li>
+                      <li style="white-space:nowrap;">・15年以上使っていただける耐久性を持った畳表です。</li>
+                    </ul>
+                  </td>
+                </tr>
+                <!-- 夏 -->
+                <tr style="vertical-align:middle;background:#fff;">
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);text-align:center;font-weight:700;white-space:nowrap;">上級</td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);text-align:center;font-weight:600;">夏<br><span style="display:inline-block;background:var(--color-accent);color:#fff;font-size:0.6rem;font-weight:700;padding:0.15rem 0.4rem;border-radius:999px;margin-top:0.2rem;white-space:nowrap;">丈夫で長持ち</span></td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);text-align:center;">四川省</td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);text-align:center;line-height:1.6;">
+                    <div style="color:#E8A000;font-size:0.9rem;">★★★★</div>
+                  </td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);text-align:center;">
+                    <strong style="font-size:0.85rem;color:var(--color-text);">8,000円</strong><br>
+                    <span style="font-size:0.75rem;color:var(--color-text-sub);white-space:nowrap;">8,800円(税込)</span>
+                  </td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);line-height:1.5;font-size:0.68rem;white-space:normal;">
+                    <span style="color:var(--color-secondary);font-weight:600;">中国産上級品</span><br>
+                    <span style="white-space:nowrap;">・使用経糸(たていと)→ 麻シングル（麻糸を１本使用）</span>
+                  </td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);white-space:normal;">
+                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.1rem;font-size:0.68rem;line-height:1.5;">
+                      <li style="white-space:nowrap;">・中国四川の工場で仕上げている畳表です。</li>
+                      <li style="white-space:nowrap;">・５〜10年使っていただける畳表です。</li>
+                    </ul>
+                  </td>
+                </tr>
+                <!-- 秋 -->
+                <tr style="vertical-align:middle;">
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);text-align:center;font-weight:700;white-space:nowrap;">並品</td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);text-align:center;font-weight:600;">秋</td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);text-align:center;">四川省</td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);text-align:center;line-height:1.6;">
+                    <div style="color:#E8A000;font-size:0.9rem;">★★★</div>
+                  </td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);text-align:center;">
+                    <strong style="font-size:0.85rem;color:var(--color-text);">6,000円</strong><br>
+                    <span style="font-size:0.75rem;color:var(--color-text-sub);white-space:nowrap;">6,600円(税込)</span>
+                  </td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);line-height:1.5;font-size:0.68rem;white-space:normal;">
+                    <span style="color:var(--color-secondary);font-weight:600;">中国産並品</span><br>
+                    <span style="white-space:nowrap;">・使用経糸(たていと)→ 綿（綿糸を１本使用）</span>
+                  </td>
+                  <td style="padding:0.3rem 0.4rem;border:1px solid var(--color-border);white-space:normal;">
+                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.1rem;font-size:0.68rem;line-height:1.5;">
+                      <li style="white-space:nowrap;">・中国四川の工場で仕上げている畳表です。</li>
+                      <li>・賃貸物件など入れ替わりのお部屋に<br>　使っていただける畳表です。</li>
+                      <li style="white-space:nowrap;">・５〜10年使っていただける畳表です。</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        <!-- 裏返し・新畳 -->
+        <div style="margin-top:2rem;" id="shin">
+
+          <!-- 裏返し -->
+          <div style="border-bottom:2px solid #3a3f6b;padding-bottom:0.4rem;margin-bottom:0.75rem;">
+            <span style="font-family:var(--font-heading);font-size:1.1rem;font-weight:700;color:var(--color-text);">裏返し</span>
+            <span style="font-size:0.82rem;color:var(--color-text-sub);margin-left:0.6rem;">（うらがえし）　価格/1畳</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:1.5rem;background:#fff;border:1px solid var(--color-border);border-radius:var(--radius-md);padding:0.8rem 1.2rem;margin-bottom:2rem;font-size:0.85rem;">
+            <div style="text-align:center;white-space:nowrap;">
+              <strong style="font-size:0.95rem;">5,000円</strong><br>
+              <span style="font-size:0.75rem;color:var(--color-text-sub);">5,500円(税込)</span>
+            </div>
+            <div style="color:var(--color-text-sub);line-height:1.7;border-left:2px solid var(--color-border);padding-left:1.2rem;">
+              ※表替えから３〜５年が目安です。畳表の裏面を張り直すことで、新品に近い状態に戻ります。<br>
+              ※年数が経ちすぎるとシミが目立つため、早めのご依頼がおすすめです。
+            </div>
+          </div>
+
+          <!-- 新畳 -->
+          <div style="border-bottom:2px solid #3a3f6b;padding-bottom:0.4rem;margin-bottom:0.75rem;">
+            <span style="font-family:var(--font-heading);font-size:1.1rem;font-weight:700;color:var(--color-text);">新規畳</span>
+            <span style="font-size:0.82rem;color:var(--color-text-sub);margin-left:0.6rem;">（現在、畳床の種類は建材床と藁床の2種類になります。）</span>
+          </div>
+          <h3 style="font-family:var(--font-heading);font-size:1.1rem;font-weight:700;color:var(--color-white);background:var(--color-primary);padding:0.6rem 1.2rem;border-radius:var(--radius-sm);margin-bottom:0.75rem;">🌿 新畳（しんきたたみ）</h3>
+          <p style="font-size:0.75rem;color:var(--color-text-sub);text-align:right;margin-bottom:0.3rem;">&#8592; 価格表は横にスクロールできます &#8594;</p>
+          <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+            <table style="width:100%;min-width:900px;border-collapse:collapse;font-size:0.85rem;background:#fff;">
+              <thead>
+                <tr style="background:var(--color-surface);text-align:center;">
+                  <th style="padding:0.5rem 0.8rem;border:1px solid var(--color-border);white-space:nowrap;">畳床の種類</th>
+                  <th style="padding:0.5rem 0.8rem;border:1px solid var(--color-border);white-space:nowrap;">価格/1畳</th>
+                  <th style="padding:0.5rem 0.8rem;border:1px solid var(--color-border);min-width:280px;">特徴・仕様</th>
+                  <th style="padding:0.5rem 0.8rem;border:1px solid var(--color-border);min-width:320px;">おすすめポイント・お客様のメリット</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- 建材床 -->
+                <tr style="vertical-align:middle;">
+                  <td style="padding:0.8rem;border:1px solid var(--color-border);text-align:center;font-weight:700;white-space:nowrap;">建材床（国産）<br><span style="font-size:0.78rem;font-weight:400;color:var(--color-text-sub);">（けんざいどこ）</span></td>
+                  <td style="padding:0.8rem;border:1px solid var(--color-border);text-align:center;white-space:nowrap;">
+                    <strong style="font-size:0.85rem;">8,000円</strong><br>
+                    <span style="font-size:0.75rem;color:var(--color-text-sub);">8,800円(税込)</span>
+                  </td>
+                  <td style="padding:0.8rem;border:1px solid var(--color-border);font-size:0.8rem;line-height:1.8;vertical-align:middle;">
+                    ・畳ボードと発砲樹脂系の素材「ポリスチレンフォーム」を重ねた新建材<br>
+                    ・断熱性、衝撃性、遮音性に優れ、現在流通している畳床の約8割を占めています。
+                  </td>
+                  <td style="padding:0.8rem;border:1px solid var(--color-border);font-size:0.8rem;line-height:1.9;vertical-align:middle;">
+                    ・ダニやその他害虫が気になっている方におすすめです。<br>
+                    ・100%ダニなどがいなくなる事は不可能ですが快適に普段の生活が出来る畳床です。<br>
+                    ・湿気にも強いのでカビの発生も防げます。<br>
+                    ・ボードを使用しているので、仕上がりも平らで見た目もとても綺麗に仕上がります。
+                  </td>
+                </tr>
+                <!-- 藁床 -->
+                <tr style="vertical-align:middle;">
+                  <td style="padding:0.8rem;border:1px solid var(--color-border);text-align:center;font-weight:700;white-space:nowrap;">藁床（国産）<br><span style="font-size:0.78rem;font-weight:400;color:var(--color-text-sub);">（わらどこ）</span></td>
+                  <td style="padding:0.8rem;border:1px solid var(--color-border);text-align:center;white-space:nowrap;">
+                    <strong style="font-size:0.85rem;">12,000円</strong><br>
+                    <span style="font-size:0.75rem;color:var(--color-text-sub);">13,200円(税込)</span>
+                  </td>
+                  <td style="padding:0.8rem;border:1px solid var(--color-border);font-size:0.8rem;line-height:1.8;vertical-align:middle;">
+                    ・昔ながらの天然素材。わらを何層にも積み重ねて圧縮してつくるため、耐久性・調湿性・断熱性・保湿性に優れています。<br>
+                    ・とりわけ調湿性に優れ、足で踏むとふわっとしたソフト感があります。また吸音・防音効果も備えております。<br>
+                    ・張替えを繰り返しても寿命が長いのが特徴です。
+                  </td>
+                  <td style="padding:0.8rem;border:1px solid var(--color-border);font-size:0.8rem;line-height:1.9;vertical-align:middle;">
+                    ・適度な柔らかさがあり、ある程度のクッション性を求める方におすすめです。<br>
+                    ・大量の水をこぼして腐らせてしまったり特別なことがない限り何回も表替えが出来、家を建て直す時まで使えます。<br>
+                    ・吸湿放湿性に優れている為、冬は暖かく夏は涼しく過ごせることもおすすめポイントです。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- 畳処分代 -->
+          <div style="border-bottom:2px solid #3a3f6b;padding-bottom:0.4rem;margin-top:2rem;margin-bottom:0.75rem;">
+            <span style="font-family:var(--font-heading);font-size:1.1rem;font-weight:700;color:var(--color-text);">畳処分代</span>
+            <span style="font-size:0.82rem;color:var(--color-text-sub);margin-left:0.6rem;">（古い畳の処分費用です。）　価格/1畳</span>
+          </div>
+          <div style="background:#fff;border:1px solid var(--color-border);border-radius:var(--radius-md);padding:0.6rem 1.2rem;font-size:0.85rem;display:flex;align-items:center;gap:1rem;">
+            <span style="font-weight:700;white-space:nowrap;">畳処分代</span>
+            <span style="color:var(--color-text-sub);border-left:2px solid var(--color-border);padding-left:1rem;">古い畳の処分　<strong>3,000円</strong>　3,300円(税込)</span>
+          </div>
+        </div>
+
+        <!-- 合計例 -->
+        <div style="margin-top:2rem;font-size:0.85rem;color:var(--color-text-sub);line-height:1.9;">
+          ※畳表「日本産、星美表（ひかり）」と畳床「建材床」を選んだ場合のお値段/１畳あたり<br>
+          <span style="color:var(--color-text);">11,000円＋8,800円＋縁代1,100円＝20,900円（税込）</span>
+        </div>
+
+        <!-- オプション -->
+        <div style="margin-top:2rem;">
+          <div style="border-bottom:2px solid #3a3f6b;padding-bottom:0.4rem;margin-bottom:0.75rem;">
+            <span style="font-family:var(--font-heading);font-size:1.1rem;font-weight:700;color:var(--color-text);">オプション</span>
+            <span style="font-size:0.82rem;color:var(--color-text-sub);margin-left:0.6rem;">（畳の施工時に追加できるオプションです。）</span>
+          </div>
+          <p style="font-size:0.75rem;color:var(--color-text-sub);text-align:right;margin-bottom:0.3rem;">&#8592; 価格表は横にスクロールできます &#8594;</p>
+          <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+          <table style="width:100%;min-width:800px;border-collapse:collapse;font-size:0.85rem;background:#fff;">
+            <thead>
+              <tr style="background:var(--color-surface);text-align:center;">
+                <th style="padding:0.5rem 0.8rem;border:1px solid var(--color-border);white-space:nowrap;">商品名</th>
+                <th style="padding:0.5rem 0.8rem;border:1px solid var(--color-border);white-space:nowrap;">価格/1畳</th>
+                <th style="padding:0.5rem 0.8rem;border:1px solid var(--color-border);min-width:280px;">特徴・仕様</th>
+                <th style="padding:0.5rem 0.8rem;border:1px solid var(--color-border);min-width:300px;">おすすめポイント・お客様のメリット</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- 竹炭パワーシート -->
+              <tr style="vertical-align:middle;">
+                <td style="padding:0.8rem;border:1px solid var(--color-border);text-align:center;font-weight:700;white-space:nowrap;">竹炭パワーシート</td>
+                <td style="padding:0.8rem;border:1px solid var(--color-border);text-align:center;white-space:nowrap;">
+                  <strong style="font-size:0.85rem;">3,500円</strong><br>
+                  <span style="font-size:0.75rem;color:var(--color-text-sub);">3,850円(税込)</span>
+                </td>
+                <td style="padding:0.8rem;border:1px solid var(--color-border);font-size:0.8rem;line-height:1.8;">
+                  ・竹炭の構造は多孔質になっており、高い調湿・消臭効果を発揮します。<br>
+                  ・活性珪酸という物質を含んでおり、抗菌抑制効果に優れています。<br>
+                  ・生地には通気性があり、ダニなどの虫が通りにくい不織布を使用しています。
+                </td>
+                <td style="padding:0.8rem;border:1px solid var(--color-border);font-size:0.8rem;line-height:1.8;">
+                  ☆ご使用されたお客様の声では☆<br>
+                  ・湿気が多く気になっていたが改善された。<br>
+                  ・部屋のこもる臭いなど悪臭がなくなった。などのお声いただいております。<br>
+                  ・抗菌抑制の効果やダニの発生を抑える事もおすすめポイントです。<br>
+                  ・半永久的にご使用出来るのでおすすめです。
+                </td>
+              </tr>
+              <!-- 防虫シート -->
+              <tr style="vertical-align:middle;">
+                <td style="padding:0.8rem;border:1px solid var(--color-border);text-align:center;font-weight:700;white-space:nowrap;">防虫シート</td>
+                <td style="padding:0.8rem;border:1px solid var(--color-border);text-align:center;white-space:nowrap;">
+                  <strong style="font-size:0.85rem;">1,500円</strong><br>
+                  <span style="font-size:0.75rem;color:var(--color-text-sub);">1,650円(税込)</span>
+                </td>
+                <td style="padding:0.8rem;border:1px solid var(--color-border);font-size:0.8rem;line-height:1.8;">
+                  ・長期にわたりダニの発生を防ぎ、快適和空間を保つことの出来る防虫シートです。
+                </td>
+                <td style="padding:0.8rem;border:1px solid var(--color-border);font-size:0.8rem;line-height:1.8;">
+                  ・畳床を包み込む紙状のシートで湿気の多いお部屋や空気がこもりやすいお部屋など、ダニの発生が気になるお客様におすすめです。<br>
+                  ・今まで使用されたほとんどの方が問題解決されています。
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+
+          <!-- オプション商品画像 -->
+          <div class="img-grid-4" style="margin-top:1.5rem;">
+            <div>
+              <img src="src/images/竹炭パワーシート画像.jpg" alt="竹炭パワーシート商品案内" class="lightbox-img" style="width:100%;height:auto;display:block;border-radius:8px;cursor:zoom-in;">
+            </div>
+            <div>
+              <img src="src/images/文化畳シート.jpg" alt="文化たたみシート商品案内" class="lightbox-img" style="width:100%;height:auto;display:block;border-radius:8px;cursor:zoom-in;">
+            </div>
+            <div>
+              <img src="src/images/防虫シート.jpg" alt="防虫シート商品" class="lightbox-img" style="width:100%;height:auto;display:block;border-radius:8px;cursor:zoom-in;">
+            </div>
+          </div>
+
+          <!-- 畳縁 -->
+          <div style="margin-top:2rem;">
+            <div style="border-bottom:2px solid #3a3f6b;padding-bottom:0.4rem;margin-bottom:0.75rem;">
+              <span style="font-family:var(--font-heading);font-size:1.1rem;font-weight:700;color:var(--color-text);">畳縁</span>
+              <span style="font-size:0.82rem;color:var(--color-text-sub);margin-left:0.6rem;">（たたみべり）　価格/1畳</span>
+            </div>
+            <p style="font-size:0.85rem;color:var(--color-text-sub);margin-bottom:0.5rem;">1,000円（1,100円税込）</p>
+            <p style="font-size:0.95rem;color:var(--color-text);font-weight:700;margin-bottom:1rem;">※ 画像をクリックすると拡大できます。</p>
+
+            <!-- 畳縁サンプル画像 -->
+            <div class="img-grid-4">
+
+              <!-- ひしろく -->
+              <div>
+                <p style="font-size:0.8rem;font-weight:700;color:var(--color-text);background:#D4E4D0;text-align:center;margin-bottom:0.4rem;padding:0.25rem 0.5rem;border-radius:var(--radius-sm);">ひしろく</p>
+                <img src="src/images/スクリーンショット 2026-05-07 181604.png" alt="畳縁 ひしろく サンプル" class="lightbox-img" style="width:100%;height:auto;display:block;border-radius:8px;cursor:zoom-in;">
+              </div>
+
+              <!-- ストリーム1 -->
+              <div>
+                <p style="font-size:0.8rem;font-weight:700;color:var(--color-text);background:#F4D4D4;text-align:center;margin-bottom:0.4rem;padding:0.25rem 0.5rem;border-radius:var(--radius-sm);">ストリーム①</p>
+                <img src="src/images/スクリーンショット 2026-05-07 181627.png" alt="畳縁 ストリーム サンプル1" class="lightbox-img" style="width:100%;height:auto;display:block;border-radius:8px;cursor:zoom-in;">
+              </div>
+
+              <!-- ストリーム2 -->
+              <div>
+                <p style="font-size:0.8rem;font-weight:700;color:var(--color-text);background:#F4D4D4;text-align:center;margin-bottom:0.4rem;padding:0.25rem 0.5rem;border-radius:var(--radius-sm);">ストリーム②</p>
+                <img src="src/images/スクリーンショット 2026-05-07 181647.png" alt="畳縁 ストリーム サンプル2" class="lightbox-img" style="width:100%;height:auto;display:block;border-radius:8px;cursor:zoom-in;">
+              </div>
+
+              <!-- 大宮縁1 -->
+              <div>
+                <p style="font-size:0.8rem;font-weight:700;color:var(--color-text);background:#D4DFF4;text-align:center;margin-bottom:0.4rem;padding:0.25rem 0.5rem;border-radius:var(--radius-sm);">大宮縁①</p>
+                <img src="src/images/スクリーンショット 2026-05-07 181714.png" alt="畳縁 大宮縁 サンプル1" class="lightbox-img" style="width:100%;height:auto;display:block;border-radius:8px;cursor:zoom-in;">
+              </div>
+
+              <!-- 大宮縁2 -->
+              <div>
+                <p style="font-size:0.8rem;font-weight:700;color:var(--color-text);background:#D4DFF4;text-align:center;margin-bottom:0.4rem;padding:0.25rem 0.5rem;border-radius:var(--radius-sm);">大宮縁②</p>
+                <img src="src/images/スクリーンショット 2026-05-07 181741.png" alt="畳縁 大宮縁 サンプル2" class="lightbox-img" style="width:100%;height:auto;display:block;border-radius:8px;cursor:zoom-in;">
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ダイケン・セキスイ 料金表 -->
+  <section class="section" id="daiken-sekisui">
+    <div class="container">
+      <span class="section-title-en">Daiken / Sekisui</span>
+      <h2 class="section-title" style="margin-bottom:2rem;font-size:1.75rem;">ダイケン健やかおもて・セキスイ美草　料金表</h2>
+
+      <!-- ダイケン・セキスイとは -->
+      <div style="background:var(--color-surface);border-radius:var(--radius-md);padding:1.2rem 1.5rem;margin-bottom:2rem;">
+        <h3 style="font-family:var(--font-heading);font-size:1rem;font-weight:700;color:var(--color-primary);border-bottom:2px solid var(--color-primary);padding-bottom:0.4rem;margin-bottom:1rem;">ダイケン健やかおもて・セキスイ美草とは</h3>
+        <div style="display:flex;flex-wrap:wrap;gap:0.6rem;">
+          <span style="background:#29B6D8;color:#fff;font-size:0.82rem;font-weight:700;padding:0.35rem 0.8rem;border-radius:999px;">✔ ダニ・カビに強い</span>
+          <span style="background:#E8933A;color:#fff;font-size:0.82rem;font-weight:700;padding:0.35rem 0.8rem;border-radius:999px;">✔ 色あせしにくい</span>
+          <span style="background:#C0392B;color:#fff;font-size:0.82rem;font-weight:700;padding:0.35rem 0.8rem;border-radius:999px;">✔ い草おもてに比べて約3倍の耐久性</span>
+          <span style="background:var(--color-primary);color:#fff;font-size:0.82rem;font-weight:700;padding:0.35rem 0.8rem;border-radius:999px;">✔ お手入れ簡単</span>
+        </div>
+      </div>
+
+      <!-- 料金テーブル 2列 -->
+      <div style="display:flex;gap:2rem;flex-wrap:wrap;margin-bottom:2.5rem;">
+
+        <!-- ダイケン -->
+        <div style="flex:1;min-width:280px;">
+          <h3 style="font-family:var(--font-heading);font-size:1rem;font-weight:700;color:var(--color-white);background:var(--color-primary);padding:0.5rem 1rem;border-radius:var(--radius-sm);margin-bottom:0.5rem;">🌿 ダイケン健やかおもて</h3>
+          <div style="overflow:hidden;border-radius:var(--radius-sm);margin-bottom:0.5rem;">
+            <img src="src/images/24313.jpg" alt="ダイケン健やかおもての特長" style="width:103%;display:block;transform:rotate(0.3deg) translate(-1.5%, 0.5%);transform-origin:center;filter:brightness(1.25);">
+          </div>
+        </div>
+
+        <!-- セキスイ -->
+        <div style="flex:1;min-width:280px;">
+          <h3 style="font-family:var(--font-heading);font-size:1rem;font-weight:700;color:var(--color-white);background:#5a7a8a;padding:0.5rem 1rem;border-radius:var(--radius-sm);margin-bottom:0.5rem;">✨ セキスイ美草</h3>
+          <img src="src/images/24314.jpg" alt="セキスイ畳MIGUSAの特長" style="width:100%;display:block;border-radius:var(--radius-sm);">
+        </div>
+      </div>
+
+      <!-- お客様のギモン -->
+      <div style="background:#fff;border:2px solid var(--color-accent);border-radius:var(--radius-md);padding:1.2rem 1.5rem;">
+        <h3 style="font-family:var(--font-heading);font-size:1.15rem;font-weight:700;color:var(--color-secondary);margin-bottom:1rem;">💬 お客様のギモン　ダイケン健やかおもてとセキスイ美草、どっちがおすすめ？？</h3>
+        <p style="font-size:1rem;color:var(--color-text);line-height:2;">
+          ・一番の違いは、畳表に使用されている素材です！！<br>
+          ・ダイケンは<span style="background:#C8A96E;color:#fff;font-weight:700;padding:0.15rem 0.6rem;border-radius:999px;font-size:0.92rem;">和紙</span>、セキスイは<span style="background:#29B6D8;color:#fff;font-weight:700;padding:0.15rem 0.6rem;border-radius:999px;font-size:0.92rem;">樹脂</span>を加工し畳織しています。<br>
+          ・質感が違いますので、実際に手に取って選んでいただけたらと思います。
+        </p>
+      </div>
+
+      <!-- ダイケン・セキスイ 料金表エリア -->
+      <div style="margin-top:2.5rem;">
+        <p style="font-size:1rem;color:var(--color-text);line-height:1.9;margin-bottom:0.4rem;">
+          ※ダイケン健やかおもてとセキスイ美草は、縁付きタイプと縁なしタイプに対応しています。
+        </p>
+
+        <!-- 注意書き -->
+        <p style="font-size:1rem;color:var(--color-text);margin-bottom:0.4rem;">※ダイケンおもて・セキスイ美草とも金額は同じです。　<span style="color:var(--color-text-sub);">（価格/1畳）</span></p>
+        <div style="font-size:1rem;color:var(--color-text);margin-bottom:1.2rem;display:flex;flex-wrap:wrap;align-items:center;gap:0.6rem;">
+          <span>※金額を詳しく知りたい方は</span>
+          <a href="tel:048-711-3222" style="display:inline-flex;align-items:center;gap:4px;font-size:0.85rem;font-weight:700;color:var(--color-primary);white-space:nowrap;text-decoration:none;padding:5px 12px;border-radius:999px;border:2px solid var(--color-primary);background:var(--color-white);">📞 048-711-3222</a>
+          <a href="contact.html" style="display:inline-flex;align-items:center;padding:5px 12px;border-radius:999px;font-size:0.85rem;font-weight:700;white-space:nowrap;text-decoration:none;background:#29B6D8;color:var(--color-white);">✉ お問い合わせ</a>
+          <a href="https://lin.ee/NYs3I5o" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;padding:5px 12px;border-radius:999px;font-size:0.85rem;font-weight:700;white-space:nowrap;text-decoration:none;background:#06C755;color:var(--color-white);">LINE問い合わせ</a>
+          <span>してください。</span>
+        </div>
+
+        <!-- ダイケン・セキスイ 料金表（横スクロール） -->
+        <p style="font-size:0.75rem;color:var(--color-text-sub);text-align:right;margin-bottom:0.3rem;">&#8592; 価格表は横にスクロールできます &#8594;</p>
+        <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+          <table style="width:100%;min-width:560px;border-collapse:collapse;font-size:0.85rem;background:#fff;">
+            <thead>
+              <tr>
+                <th style="padding:0.6rem 1rem;border:1px solid var(--color-border);background:var(--color-surface);text-align:center;white-space:nowrap;min-width:90px;">種別</th>
+                <th style="padding:0.6rem 1rem;border:1px solid var(--color-border);background:#29B6D8;color:#fff;text-align:center;white-space:nowrap;min-width:160px;">縁なし料金<br><span style="font-size:0.78rem;font-weight:400;">半畳サイズ</span></th>
+                <th style="padding:0.6rem 1rem;border:1px solid var(--color-border);background:#E8933A;color:#fff;text-align:center;white-space:nowrap;min-width:160px;">縁なし料金<br><span style="font-size:0.78rem;font-weight:400;">1畳サイズ</span></th>
+                <th style="padding:0.6rem 1rem;border:1px solid var(--color-border);background:var(--color-primary);color:#fff;text-align:center;white-space:nowrap;min-width:160px;">縁付き料金<br><span style="font-size:0.78rem;font-weight:400;">1畳サイズ</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="text-align:center;">
+                <td style="padding:0.7rem 1rem;border:1px solid var(--color-border);font-weight:700;white-space:nowrap;background:var(--color-surface);">表替え</td>
+                <td style="padding:0.7rem 1rem;border:1px solid var(--color-border);">
+                  <span style="font-size:1.1rem;font-weight:700;color:var(--color-text);">15,000円〜</span><br>
+                  <span style="font-size:0.75rem;color:var(--color-text-sub);">16,500円（税込）</span>
+                </td>
+                <td style="padding:0.7rem 1rem;border:1px solid var(--color-border);">
+                  <span style="font-size:1.1rem;font-weight:700;color:var(--color-text);">22,000円〜</span><br>
+                  <span style="font-size:0.75rem;color:var(--color-text-sub);">24,200円（税込）</span>
+                </td>
+                <td style="padding:0.7rem 1rem;border:1px solid var(--color-border);">
+                  <span style="font-size:1.1rem;font-weight:700;color:var(--color-text);">14,000円〜</span><br>
+                  <span style="font-size:0.75rem;color:var(--color-text-sub);">15,400円（税込）</span>
+                </td>
+              </tr>
+              <tr style="text-align:center;">
+                <td style="padding:0.7rem 1rem;border:1px solid var(--color-border);font-weight:700;white-space:nowrap;background:var(--color-surface);">新規畳</td>
+                <td style="padding:0.7rem 1rem;border:1px solid var(--color-border);">
+                  <span style="font-size:1.1rem;font-weight:700;color:var(--color-text);">17,000円〜</span><br>
+                  <span style="font-size:0.75rem;color:var(--color-text-sub);">18,700円（税込）</span>
+                </td>
+                <td style="padding:0.7rem 1rem;border:1px solid var(--color-border);">
+                  <span style="font-size:1.1rem;font-weight:700;color:var(--color-text);">30,000円〜</span><br>
+                  <span style="font-size:0.75rem;color:var(--color-text-sub);">33,000円（税込）</span>
+                </td>
+                <td style="padding:0.7rem 1rem;border:1px solid var(--color-border);">
+                  <span style="font-size:1.1rem;font-weight:700;color:var(--color-text);">22,000円〜</span><br>
+                  <span style="font-size:0.75rem;color:var(--color-text-sub);">24,200円（税込）</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 見本帳タイトル -->
+        <div style="margin-top:2.5rem;margin-bottom:1.2rem;">
+          <p style="font-family:var(--font-heading);font-size:1.3rem;font-weight:700;color:var(--color-text);margin-bottom:0.3rem;">豊富なカラーバリエーション</p>
+          <p style="font-size:0.95rem;color:var(--color-text);font-weight:700;margin-top:0.3rem;margin-bottom:0.4rem;">※ 画像をクリックすると拡大できます。</p>
+          <p style="font-family:var(--font-heading);font-size:1rem;font-weight:700;color:var(--color-white);background:var(--color-primary);display:inline-block;padding:0.4rem 1.2rem;border-radius:var(--radius-sm);margin-top:0;">🌿 ダイケン健やかおもて</p>
+        </div>
+
+        <!-- ダイケン見本帳 画像 1行目（3枚） -->
+        <div class="img-grid-4" style="margin-top:0.5rem;">
+          <div>
+            <img src="src/images/スクリーンショット 2026-05-07 173840.png" alt="ダイケン健やかおもて 見本1" class="lightbox-img" style="width:100%;height:auto;display:block;border-radius:8px;cursor:zoom-in;">
+          </div>
+          <div>
+            <img src="src/images/スクリーンショット 2026-05-07 173907.png" alt="ダイケン健やかおもて 見本2" class="lightbox-img" style="width:100%;height:auto;display:block;border-radius:8px;cursor:zoom-in;">
+          </div>
+          <div>
+            <img src="src/images/スクリーンショット 2026-05-07 173940.png" alt="ダイケン健やかおもて 見本3" class="lightbox-img" style="width:100%;height:auto;display:block;border-radius:8px;cursor:zoom-in;">
+          </div>
+        </div>
+
+        <!-- セキスイ美草バナー -->
+        <p style="font-family:var(--font-heading);font-size:1rem;font-weight:700;color:var(--color-white);background:#5a7a8a;display:inline-block;padding:0.4rem 1.2rem;border-radius:var(--radius-sm);margin-top:2rem;margin-bottom:0.5rem;">✨ セキスイ美草</p>
+
+        <!-- セキスイ美草 画像（4枚・PC=4列/スマホ=2×2） -->
+        <div class="img-grid-4" style="margin-top:0;">
+          <div>
+            <img src="src/images/スクリーンショット 2026-05-07 174647.png" alt="セキスイ美草 見本1" class="lightbox-img" style="width:100%;height:auto;display:block;border-radius:8px;cursor:zoom-in;">
+          </div>
+          <div>
+            <img src="src/images/スクリーンショット 2026-05-07 174724.png" alt="セキスイ美草 見本2" class="lightbox-img" style="width:100%;height:auto;display:block;border-radius:8px;cursor:zoom-in;">
+          </div>
+          <div>
+            <img src="src/images/スクリーンショット 2026-05-07 174754.png" alt="セキスイ美草 見本3" class="lightbox-img" style="width:100%;height:auto;display:block;border-radius:8px;cursor:zoom-in;">
+          </div>
+          <div>
+            <img src="src/images/スクリーンショット 2026-05-07 174818.png" alt="セキスイ美草 見本4" class="lightbox-img" style="width:100%;height:auto;display:block;border-radius:8px;cursor:zoom-in;">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- わんにゃんスマイル畳 -->
+  <section class="section" id="wannyan">
+    <div class="container">
+      <span class="section-title-en">Wannyan Smile Tatami</span>
+      <h2 class="section-title" style="font-size:1.75rem;">わんにゃんスマイル畳</h2>
+      <p style="font-size:1rem;color:var(--color-text);margin-bottom:1.5rem;">人とペットにやさしい合成皮革の畳表です。抗菌・防カビ・防臭効果も期待できます。</p>
+
+      <!-- 画像 4枚（PC=4列/スマホ=2×2） -->
+      <div class="img-grid-4" style="margin-bottom:2rem;">
+        <div>
+          <img src="src/images/スクリーンショット 2026-05-13 152624.png" alt="わんにゃんスマイル畳 紹介1" class="lightbox-img" style="width:100%;height:auto;display:block;border-radius:8px;cursor:zoom-in;">
+        </div>
+        <div>
+          <img src="src/images/スクリーンショット 2026-05-13 152645.png" alt="わんにゃんスマイル畳 紹介2" class="lightbox-img" style="width:100%;height:auto;display:block;border-radius:8px;cursor:zoom-in;">
+        </div>
+        <div>
+          <img src="src/images/スクリーンショット 2026-05-13 152659.png" alt="わんにゃんスマイル畳 カラー" class="lightbox-img" style="width:100%;height:auto;display:block;border-radius:8px;cursor:zoom-in;">
+        </div>
+        <div>
+          <img src="src/images/スクリーンショット 2026-05-13 152713.png" alt="わんにゃんスマイル畳 特長" class="lightbox-img" style="width:100%;height:auto;display:block;border-radius:8px;cursor:zoom-in;">
+        </div>
+      </div>
+
+      <!-- 料金注記 -->
+      <div style="margin-bottom:1.2rem;">
+        <p style="font-size:1rem;color:var(--color-text);margin-bottom:0.4rem;">※わんにゃんスマイル畳は、縁付きタイプと縁なしタイプに対応しています。　<span style="color:var(--color-text-sub);">（価格/1畳）</span></p>
+        <div style="font-size:1rem;color:var(--color-text);margin-bottom:0;display:flex;flex-wrap:wrap;align-items:center;gap:0.6rem;">
+          <span>※金額を詳しく知りたい方は</span>
+          <a href="tel:048-711-3222" style="display:inline-flex;align-items:center;gap:4px;font-size:0.85rem;font-weight:700;color:var(--color-primary);white-space:nowrap;text-decoration:none;padding:5px 12px;border-radius:999px;border:2px solid var(--color-primary);background:var(--color-white);">📞 048-711-3222</a>
+          <a href="contact.html" style="display:inline-flex;align-items:center;padding:5px 12px;border-radius:999px;font-size:0.85rem;font-weight:700;white-space:nowrap;text-decoration:none;background:#29B6D8;color:var(--color-white);">✉ お問い合わせ</a>
+          <a href="https://lin.ee/NYs3I5o" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;padding:5px 12px;border-radius:999px;font-size:0.85rem;font-weight:700;white-space:nowrap;text-decoration:none;background:#06C755;color:var(--color-white);">LINE問い合わせ</a>
+          <span>してください。</span>
+        </div>
+      </div>
+
+      <!-- わんにゃんスマイル畳 料金表（横スクロール） -->
+      <p style="font-size:0.75rem;color:var(--color-text-sub);text-align:right;margin-bottom:0.3rem;">&#8592; 価格表は横にスクロールできます &#8594;</p>
+      <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+        <table style="width:100%;min-width:560px;border-collapse:collapse;font-size:0.85rem;background:#fff;">
+          <thead>
+            <tr>
+              <th style="padding:0.6rem 1rem;border:1px solid var(--color-border);background:var(--color-surface);text-align:center;white-space:nowrap;min-width:90px;">種別</th>
+              <th style="padding:0.6rem 1rem;border:1px solid var(--color-border);background:#29B6D8;color:#fff;text-align:center;white-space:nowrap;min-width:160px;">縁なし料金<br><span style="font-size:0.78rem;font-weight:400;">半畳サイズ</span></th>
+              <th style="padding:0.6rem 1rem;border:1px solid var(--color-border);background:#E8933A;color:#fff;text-align:center;white-space:nowrap;min-width:160px;">縁なし料金<br><span style="font-size:0.78rem;font-weight:400;">1畳サイズ</span></th>
+              <th style="padding:0.6rem 1rem;border:1px solid var(--color-border);background:var(--color-primary);color:#fff;text-align:center;white-space:nowrap;min-width:160px;">縁付き料金<br><span style="font-size:0.78rem;font-weight:400;">1畳サイズ</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="text-align:center;">
+              <td style="padding:0.7rem 1rem;border:1px solid var(--color-border);font-weight:700;white-space:nowrap;background:var(--color-surface);">表替え</td>
+              <td style="padding:0.7rem 1rem;border:1px solid var(--color-border);">
+                <span style="font-size:1.1rem;font-weight:700;color:var(--color-text);">19,000円〜</span><br>
+                <span style="font-size:0.75rem;color:var(--color-text-sub);">20,900円（税込）</span>
+              </td>
+              <td style="padding:0.7rem 1rem;border:1px solid var(--color-border);">
+                <span style="font-size:1.1rem;font-weight:700;color:var(--color-text);">23,000円〜</span><br>
+                <span style="font-size:0.75rem;color:var(--color-text-sub);">25,300円（税込）</span>
+              </td>
+              <td style="padding:0.7rem 1rem;border:1px solid var(--color-border);">
+                <span style="font-size:1.1rem;font-weight:700;color:var(--color-text);">18,000円〜</span><br>
+                <span style="font-size:0.75rem;color:var(--color-text-sub);">19,800円（税込）</span>
+              </td>
+            </tr>
+            <tr style="text-align:center;">
+              <td style="padding:0.7rem 1rem;border:1px solid var(--color-border);font-weight:700;white-space:nowrap;background:var(--color-surface);">新規畳</td>
+              <td style="padding:0.7rem 1rem;border:1px solid var(--color-border);">
+                <span style="font-size:1.1rem;font-weight:700;color:var(--color-text);">26,000円〜</span><br>
+                <span style="font-size:0.75rem;color:var(--color-text-sub);">28,600円（税込）</span>
+              </td>
+              <td style="padding:0.7rem 1rem;border:1px solid var(--color-border);">
+                <span style="font-size:1.1rem;font-weight:700;color:var(--color-text);">32,000円〜</span><br>
+                <span style="font-size:0.75rem;color:var(--color-text-sub);">35,200円（税込）</span>
+              </td>
+              <td style="padding:0.7rem 1rem;border:1px solid var(--color-border);">
+                <span style="font-size:1.1rem;font-weight:700;color:var(--color-text);">26,000円〜</span><br>
+                <span style="font-size:0.75rem;color:var(--color-text-sub);">28,600円（税込）</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 琉球畳 -->
+  <section class="section" id="ryukyu">
+    <div class="container">
+      <span class="section-title-en">Ryukyu Tatami</span>
+      <h2 class="section-title" style="font-size:1.75rem;">琉球畳</h2>
+
+      <!-- 説明文 -->
+      <div style="max-width:860px;margin:0 auto;">
+        <p style="font-size:1rem;color:var(--color-text);line-height:2;margin-bottom:1.5rem;">
+          琉球表（りゅうきゅうおもて）は、カヤツリグサ科の植物「七島藺（しちとうい）」を原料として作られる、耐久性に優れた特殊な畳表（畳の表面）です。かつて沖縄で栽培されていたためこの名があり、現在は大分県国東地方などで主に生産されています。
+        </p>
+        <p style="font-size:1rem;color:var(--color-text);line-height:2;margin-bottom:1.5rem;">
+          現在は「琉球畳」の材料として知られますが、もともとは耐久性を活かし、柔道畳や農作業場用としても使われていた頑丈な素材です。
+        </p>
+
+        <!-- 特徴 -->
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:0.75rem;margin-top:0.5rem;">
+
+          <!-- 素材 -->
+          <div style="background:#fff;border-radius:var(--radius-md);padding:1rem 1.2rem;box-shadow:0 2px 8px rgba(0,0,0,0.07);border-top:3px solid var(--color-primary);">
+            <span style="display:inline-block;background:var(--color-primary);color:#fff;font-size:0.78rem;font-weight:700;padding:0.2rem 0.8rem;border-radius:999px;margin-bottom:0.6rem;">素材</span>
+            <p style="font-size:0.88rem;color:var(--color-text);line-height:1.75;margin:0;">七島藺を使用。い草よりも断面が三角形で、繊維が太く丈夫。</p>
+          </div>
+
+          <!-- 見た目・触り心地 -->
+          <div style="background:#fff;border-radius:var(--radius-md);padding:1rem 1.2rem;box-shadow:0 2px 8px rgba(0,0,0,0.07);border-top:3px solid #E8933A;">
+            <span style="display:inline-block;background:#E8933A;color:#fff;font-size:0.78rem;font-weight:700;padding:0.2rem 0.8rem;border-radius:999px;margin-bottom:0.6rem;white-space:nowrap;">見た目・触り心地</span>
+            <p style="font-size:0.88rem;color:var(--color-text);line-height:1.75;margin:0;">表面がざらざらとしており、荒々しく素朴な風合い。</p>
+          </div>
+
+          <!-- 耐久性 -->
+          <div style="background:#fff;border-radius:var(--radius-md);padding:1rem 1.2rem;box-shadow:0 2px 8px rgba(0,0,0,0.07);border-top:3px solid #C0392B;">
+            <span style="display:inline-block;background:#C0392B;color:#fff;font-size:0.78rem;font-weight:700;padding:0.2rem 0.8rem;border-radius:999px;margin-bottom:0.6rem;">耐久性</span>
+            <p style="font-size:0.88rem;color:var(--color-text);line-height:1.75;margin:0;">一般的なイ草の畳よりも耐久力が高く、長く使える。</p>
+          </div>
+
+          <!-- 用途 -->
+          <div style="background:#fff;border-radius:var(--radius-md);padding:1rem 1.2rem;box-shadow:0 2px 8px rgba(0,0,0,0.07);border-top:3px solid #29B6D8;">
+            <span style="display:inline-block;background:#29B6D8;color:#fff;font-size:0.78rem;font-weight:700;padding:0.2rem 0.8rem;border-radius:999px;margin-bottom:0.6rem;">用途</span>
+            <p style="font-size:0.88rem;color:var(--color-text);line-height:1.75;margin:0;">縁なし半畳の「琉球畳」として利用され、市松模様のモダンな和室によく使用される。</p>
+          </div>
+
+        </div>
+
+        <!-- 琉球畳 画像 -->
+        <div class="img-grid-4" style="margin-top:2rem;">
+          <div>
+            <img src="src/images/琉球表.jpg" alt="琉球表 素材" class="lightbox-img" style="width:100%;height:auto;display:block;border-radius:8px;cursor:zoom-in;">
+          </div>
+          <div>
+            <img src="src/images/24356.jpg" alt="琉球畳 施工例1" class="lightbox-img" style="width:100%;height:auto;display:block;border-radius:8px;cursor:zoom-in;">
+          </div>
+          <div>
+            <img src="src/images/24357.jpg" alt="琉球畳 施工例2" class="lightbox-img" style="width:100%;height:auto;display:block;border-radius:8px;cursor:zoom-in;">
+          </div>
+          <div>
+            <img src="src/images/24358.jpg" alt="琉球畳 施工例3" class="lightbox-img" style="width:100%;height:auto;display:block;border-radius:8px;cursor:zoom-in;">
+          </div>
+        </div>
+
+        <!-- 注記・お問い合わせ -->
+        <div style="margin-top:1.5rem;">
+          <p style="font-size:1rem;color:var(--color-text);margin-bottom:0.4rem;">※琉球畳は、縁なしタイプに対応しています。</p>
+          <div style="font-size:1rem;color:var(--color-text);display:flex;flex-wrap:wrap;align-items:center;gap:0.6rem;">
+            <span>※詳細、金額などを詳しく知りたい方は</span>
+            <a href="tel:048-711-3222" style="display:inline-flex;align-items:center;gap:4px;font-size:0.85rem;font-weight:700;color:var(--color-primary);white-space:nowrap;text-decoration:none;padding:5px 12px;border-radius:999px;border:2px solid var(--color-primary);background:var(--color-white);">📞 048-711-3222</a>
+            <a href="contact.html" style="display:inline-flex;align-items:center;padding:5px 12px;border-radius:999px;font-size:0.85rem;font-weight:700;white-space:nowrap;text-decoration:none;background:#29B6D8;color:var(--color-white);">✉ お問い合わせ</a>
+            <a href="https://lin.ee/NYs3I5o" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;padding:5px 12px;border-radius:999px;font-size:0.85rem;font-weight:700;white-space:nowrap;text-decoration:none;background:#06C755;color:var(--color-white);">LINE問い合わせ</a>
+            <span>してください。</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 襖・障子 -->
+  <section class="section section-bg" id="fusuma">
+    <div class="container">
+      <span class="section-title-en">Fusuma / Shoji</span>
+      <h2 class="section-title" style="font-size:1.75rem;">襖・障子 料金表</h2>
+
+      <!-- 襖張替え -->
+      <h3 style="font-family:var(--font-heading);font-size:1.1rem;font-weight:700;color:var(--color-text);background:var(--color-surface);padding:0.6rem 1rem;border-left:4px solid var(--color-primary);margin-bottom:1rem;">襖張替え</h3>
+      <p style="font-size:0.75rem;color:var(--color-text-sub);text-align:right;margin-bottom:0.3rem;">&#8592; 価格表は横にスクロールできます &#8594;</p>
+      <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;margin-bottom:0.5rem;">
+        <table style="width:100%;min-width:600px;border-collapse:collapse;font-size:0.9rem;background:#fff;">
+          <thead>
+            <tr style="background:var(--color-surface);text-align:center;">
+              <th style="padding:0.6rem;border:1px solid var(--color-border);width:120px;"></th>
+              <th style="padding:0.6rem;border:1px solid var(--color-border);width:120px;"></th>
+              <th style="padding:0.6rem;border:1px solid var(--color-border);min-width:260px;">説明</th>
+              <th style="padding:0.6rem;border:1px solid var(--color-border);width:150px;white-space:nowrap;">料金</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="vertical-align:middle;">
+              <td style="padding:0.5rem;border:1px solid var(--color-border);text-align:center;">
+                <img src="src/images/21608_0.jpg" alt="山水 新鳥の子 カタログ" class="lightbox-img" style="width:110px;height:auto;display:block;margin:0 auto;cursor:zoom-in;">
+              </td>
+              <td style="padding:0.5rem;border:1px solid var(--color-border);text-align:center;">
+                <img src="src/images/21606_0.jpg" alt="山水 新鳥の子 サンプル" class="lightbox-img" style="width:110px;height:auto;display:block;margin:0 auto;cursor:zoom-in;">
+              </td>
+              <td style="padding:0.8rem 1rem;border:1px solid var(--color-border);">
+                <p style="font-weight:700;margin-bottom:0.3rem;">山水　新鳥の子</p>
+                <p style="font-size:0.82rem;color:var(--color-text-sub);line-height:1.8;">モダンな和室にもマッチしてご使用いただける銘柄も多数取扱。バリエーション豊富な定番のラインナップ。</p>
+              </td>
+              <td style="padding:0.8rem;border:1px solid var(--color-border);text-align:center;">
+                <p style="font-weight:700;font-size:1rem;margin:0;">1面　5,000円</p>
+                <p style="font-size:0.8rem;color:var(--color-text-sub);margin:0;">5,500円(税込)</p>
+              </td>
+            </tr>
+            <tr style="vertical-align:middle;background:var(--color-surface);">
+              <td style="padding:0.5rem;border:1px solid var(--color-border);text-align:center;">
+                <img src="src/images/21607_0.jpg" alt="景勝 新鳥の子 カタログ" class="lightbox-img" style="width:110px;height:auto;display:block;margin:0 auto;cursor:zoom-in;">
+              </td>
+              <td style="padding:0.5rem;border:1px solid var(--color-border);text-align:center;">
+                <img src="src/images/21611_0.jpg" alt="景勝 新鳥の子 サンプル" class="lightbox-img" style="width:110px;height:auto;display:block;margin:0 auto;cursor:zoom-in;">
+              </td>
+              <td style="padding:0.8rem 1rem;border:1px solid var(--color-border);">
+                <p style="font-weight:700;margin-bottom:0.3rem;">景勝　新鳥の子</p>
+                <p style="font-size:0.82rem;color:var(--color-text-sub);line-height:1.8;">繊細な模様と色彩が美しく、それぞれの住まいの雰囲気に合わせやすい。生活感あふれる意匠を提案。</p>
+              </td>
+              <td style="padding:0.8rem;border:1px solid var(--color-border);text-align:center;">
+                <p style="font-weight:700;font-size:1rem;margin:0;">1面　5,500円</p>
+                <p style="font-size:0.8rem;color:var(--color-text-sub);margin:0;">6,050円(税込)</p>
+              </td>
+            </tr>
+            <tr style="vertical-align:middle;">
+              <td style="padding:0.5rem;border:1px solid var(--color-border);text-align:center;">
+                <img src="src/images/21605_0.jpg" alt="のれん 友人 カタログ" class="lightbox-img" style="width:110px;height:auto;display:block;margin:0 auto;cursor:zoom-in;">
+              </td>
+              <td style="padding:0.5rem;border:1px solid var(--color-border);text-align:center;">
+                <img src="src/images/21610_0.jpg" alt="のれん 友人 サンプル" class="lightbox-img" style="width:110px;height:auto;display:block;margin:0 auto;cursor:zoom-in;">
+              </td>
+              <td style="padding:0.8rem 1rem;border:1px solid var(--color-border);">
+                <p style="font-weight:700;margin-bottom:0.3rem;">のれん　糸入り</p>
+                <p style="font-size:0.82rem;color:var(--color-text-sub);line-height:1.8;">本格和室の伝統的な趣を大切にしながら、あらゆる住空間に美しく映える上質な襖紙。</p>
+              </td>
+              <td style="padding:0.8rem;border:1px solid var(--color-border);text-align:center;">
+                <p style="font-weight:700;font-size:1rem;margin:0;">1面　6,500円</p>
+                <p style="font-size:0.8rem;color:var(--color-text-sub);margin:0;">7,150円(税込)</p>
+              </td>
+            </tr>
+            <tr style="vertical-align:middle;background:var(--color-surface);">
+              <td style="padding:0.5rem;border:1px solid var(--color-border);text-align:center;">
+                <img src="src/images/21612_0.jpg" alt="あかつき 高級襖紙 カタログ" class="lightbox-img" style="width:110px;height:auto;display:block;margin:0 auto;cursor:zoom-in;">
+              </td>
+              <td style="padding:0.5rem;border:1px solid var(--color-border);text-align:center;">
+                <img src="src/images/21613.jpg" alt="あかつき 高級襖紙 サンプル" class="lightbox-img" style="width:110px;height:auto;display:block;margin:0 auto;cursor:zoom-in;">
+              </td>
+              <td style="padding:0.8rem 1rem;border:1px solid var(--color-border);">
+                <p style="font-weight:700;margin-bottom:0.3rem;">あかつき　高級襖紙</p>
+                <p style="font-size:0.82rem;color:var(--color-text-sub);line-height:1.8;">繊維独自の組み合わせで紙厚・風合いを巧みに活かした高品質な高級襖紙。清雅感あふれる丁寧な仕上がり。</p>
+              </td>
+              <td style="padding:0.8rem;border:1px solid var(--color-border);text-align:center;">
+                <p style="font-weight:700;font-size:1rem;margin:0;">1面　12,000円</p>
+                <p style="font-size:0.8rem;color:var(--color-text-sub);margin:0;">13,200円(税込)</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- 備考 -->
+      <div style="font-size:0.88rem;color:var(--color-text);line-height:2;margin-bottom:2.5rem;">
+        <p>※押入れ襖張り　1面 2,200円(税込)</p>
+        <p>※天袋、地袋　1枚の70%（山水 新鳥の子の場合5,500円の70%で3,850円）</p>
+        <p>※新規襖　33,000円(税込)〜</p>
+      </div>
+
+      <!-- 障子張替え -->
+      <h3 style="font-family:var(--font-heading);font-size:1.1rem;font-weight:700;color:var(--color-text);background:var(--color-surface);padding:0.6rem 1rem;border-left:4px solid var(--color-primary);margin-bottom:1rem;">障子張替え</h3>
+      <p style="font-size:0.75rem;color:var(--color-text-sub);text-align:right;margin-bottom:0.3rem;">&#8592; 価格表は横にスクロールできます &#8594;</p>
+      <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;margin-bottom:0.5rem;">
+        <table style="width:100%;min-width:600px;border-collapse:collapse;font-size:0.9rem;background:#fff;">
+          <thead>
+            <tr style="background:var(--color-surface);text-align:center;">
+              <th style="padding:0.6rem;border:1px solid var(--color-border);width:120px;"></th>
+              <th style="padding:0.6rem;border:1px solid var(--color-border);width:120px;"></th>
+              <th style="padding:0.6rem;border:1px solid var(--color-border);min-width:260px;">説明</th>
+              <th style="padding:0.6rem;border:1px solid var(--color-border);width:150px;white-space:nowrap;">料金</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="vertical-align:middle;">
+              <td style="padding:0.5rem;border:1px solid var(--color-border);text-align:center;">
+                <img src="src/images/shoji1.jpg" alt="和紙障子 施工例" class="lightbox-img" style="width:110px;height:auto;display:block;margin:0 auto;cursor:zoom-in;">
+              </td>
+              <td style="padding:0.5rem;border:1px solid var(--color-border);text-align:center;">
+                <img src="src/images/shoji2.jpg" alt="和紙障子紙 サンプル" class="lightbox-img" style="width:110px;height:auto;display:block;margin:0 auto;cursor:zoom-in;">
+              </td>
+              <td style="padding:0.8rem 1rem;border:1px solid var(--color-border);">
+                <p style="font-weight:700;margin-bottom:0.3rem;">和紙</p>
+                <p style="font-size:0.82rem;color:var(--color-text-sub);line-height:1.8;">※一般的な障子紙です</p>
+              </td>
+              <td style="padding:0.8rem;border:1px solid var(--color-border);text-align:center;">
+                <p style="font-weight:700;font-size:1rem;margin:0;">1枚　4,500円</p>
+                <p style="font-size:0.8rem;color:var(--color-text-sub);margin:0;">4,950円(税込)</p>
+              </td>
+            </tr>
+            <tr style="vertical-align:middle;background:var(--color-surface);">
+              <td style="padding:0.5rem;border:1px solid var(--color-border);text-align:center;">
+                <img src="src/images/shoji3.jpg" alt="破れにくい障子紙 施工例" class="lightbox-img" style="width:110px;height:auto;display:block;margin:0 auto;cursor:zoom-in;">
+              </td>
+              <td style="padding:0.5rem;border:1px solid var(--color-border);text-align:center;">
+                <img src="src/images/shoji5.jpg" alt="破れにくい障子紙 サンプル" class="lightbox-img" style="width:110px;height:auto;display:block;margin:0 auto;cursor:zoom-in;">
+              </td>
+              <td style="padding:0.8rem 1rem;border:1px solid var(--color-border);">
+                <p style="font-weight:700;margin-bottom:0.3rem;">破れにくい障子紙</p>
+              </td>
+              <td style="padding:0.8rem;border:1px solid var(--color-border);text-align:center;">
+                <p style="font-weight:700;font-size:1rem;margin:0;">1枚　5,500円</p>
+                <p style="font-size:0.8rem;color:var(--color-text-sub);margin:0;">6,050円(税込)</p>
+              </td>
+            </tr>
+            <tr style="vertical-align:middle;">
+              <td style="padding:0.5rem;border:1px solid var(--color-border);text-align:center;">
+                <img src="src/images/shoji4.jpg" alt="プラスチック障子紙 施工例" class="lightbox-img" style="width:110px;height:auto;display:block;margin:0 auto;cursor:zoom-in;">
+              </td>
+              <td style="padding:0.5rem;border:1px solid var(--color-border);text-align:center;">
+                <img src="src/images/shoji6.jpg" alt="プラスチック障子紙 サンプル" class="lightbox-img" style="width:110px;height:auto;display:block;margin:0 auto;cursor:zoom-in;">
+              </td>
+              <td style="padding:0.8rem 1rem;border:1px solid var(--color-border);">
+                <p style="font-weight:700;margin-bottom:0.3rem;">プラスチック障子紙</p>
+                <p style="font-size:0.82rem;color:var(--color-text-sub);line-height:1.8;">ペットがいるご家庭でも大切なものを傷つけてしまわないよう配慮した障子紙。</p>
+              </td>
+              <td style="padding:0.8rem;border:1px solid var(--color-border);text-align:center;">
+                <p style="font-weight:700;font-size:1rem;margin:0;">1枚　13,000円</p>
+                <p style="font-size:0.8rem;color:var(--color-text-sub);margin:0;">14,300円(税込)〜</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- 備考 -->
+      <div style="font-size:0.88rem;color:var(--color-text);line-height:2;">
+        <p>※大きさにより値段が変わる場合があります。</p>
+        <p>※新規障子はお問い合わせください。</p>
+        <p>※その他、模様入り、色付き障子など希望の場合はお問い合わせください。</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========== お問い合わせCTA ========== -->
+  <section class="cta" aria-label="お問い合わせ">
+    <div class="container">
+      <div class="cta__deco"><span>✦</span></div>
+      <h2 class="cta__title">まずはお気軽にご相談ください</h2>
+      <p class="cta__text">見積もり・ご相談は無料です。<br>畳の見本帳をお持ちしてご自宅へお伺いします。</p>
+      <p class="cta__hours">営業時間 8:00〜19:00（土日・祝日も対応可）</p>
+      <div class="cta__buttons">
+        <a href="tel:048-711-3222" class="header__contact-tel cta__contact-btn">
+          📞 <span>048-711-3222</span>
+        </a>
+        <a href="contact.html" class="header__contact-btn header__contact-mail cta__contact-btn">
+          ✉ お問い合わせ
+        </a>
+        <a href="https://lin.ee/NYs3I5o" target="_blank" rel="noopener" class="header__contact-btn header__contact-line cta__contact-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:5px;"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+          LINE問い合わせ
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div><p class="footer__brand-name">星野畳店</p><p class="footer__tagline">さいたま市で50年以上、地域とともに。</p></div>
+        <div>
+          <p class="footer__nav-title">Pages</p>
+          <ul class="footer__nav-list">
+            <li><a href="greeting.html">ごあいさつ</a></li>
+            <li><a href="price.html">料金表</a></li>
+            <li><a href="flow.html">ご依頼の流れ</a></li>
+            <li><a href="ex.html">施工事例</a></li>
+            <li><a href="calmo.html">CALMO（置き畳）</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__nav-title">Access</p>
+          <div class="footer__info">
+            <p>〒336-0022 埼玉県さいたま市南区白幡6-1-18</p>
+            <p>TEL: <a href="tel:048-711-3222" style="color:#aaa;">048-711-3222</a></p>
+            <p>8:00〜19:00（土日・祝日可）</p>
+            <p><a href="mailto:hoshinotatamiten@gmail.com" style="color:#aaa;">hoshinotatamiten@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom"><p>© 2025 星野畳店 All Rights Reserved.</p></div>
+    </div>
+  </footer>
+
+  <!-- スマホ固定ボタンバー -->
+  <div class="btn-call-fixed">
+    <a href="tel:048-711-3222" class="btn-call-fixed__tel">📞 048-711-3222</a>
+    <a href="contact.html" class="btn-call-fixed__mail">✉ お問い合わせ</a>
+    <a href="https://lin.ee/NYs3I5o" target="_blank" rel="noopener" class="btn-call-fixed__line">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:4px;"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>LINE
+    </a>
+  </div>
+
+  <!-- ライトボックス -->
+  <div id="lightbox" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);z-index:9999;align-items:center;justify-content:center;cursor:zoom-out;" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="" style="max-width:90%;max-height:90vh;object-fit:contain;border-radius:4px;box-shadow:0 4px 20px rgba(0,0,0,0.5);">
+    <span style="position:absolute;top:1rem;right:1.5rem;color:#fff;font-size:2rem;cursor:pointer;line-height:1;" onclick="closeLightbox()">✕</span>
+  </div>
+
+  <script>
+    document.querySelectorAll('.lightbox-img').forEach(function(img) {
+      img.addEventListener('click', function() {
+        var lb = document.getElementById('lightbox');
+        document.getElementById('lightbox-img').src = this.src;
+        document.getElementById('lightbox-img').alt = this.alt;
+        lb.style.display = 'flex';
+      });
+    });
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
+
+  <script src="src/js/main.js"></script>
+</body>
+</html>

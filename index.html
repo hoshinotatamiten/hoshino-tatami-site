@@ -1,0 +1,569 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>さいたま市南区の畳店 | 星野畳店 - 畳張替・表替え・襖・障子</title>
+  <meta name="description" content="さいたま市南区白幡で50年以上の実績。畳の表替え・新畳・裏返し、襖・障子の張替えはお任せください。土日対応・当日納品可。TEL:048-711-3222">
+  <meta name="keywords" content="さいたま市 畳張替え,浦和 畳店,さいたま市南区 畳,埼玉 畳 表替え,星野畳店">
+
+  <!-- OGP -->
+  <meta property="og:title" content="さいたま市南区の畳店 | 星野畳店">
+  <meta property="og:description" content="さいたま市南区白幡で50年以上の実績。畳張替え・表替え・新畳・襖・障子はお任せください。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hoshinotatami.com/">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="src/css/style.css">
+
+  <!-- Schema.org 構造化データ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "星野畳店",
+    "image": "https://hoshinotatami.com/src/images/hero1.jpg",
+    "telephone": "048-711-3222",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "白幡6-1-18",
+      "addressLocality": "さいたま市南区",
+      "addressRegion": "埼玉県",
+      "postalCode": "336-0022",
+      "addressCountry": "JP"
+    },
+    "openingHours": "Mo-Su 08:00-19:00",
+    "url": "https://hoshinotatami.com/"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ========== ヘッダー ========== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="src/images/logo-mark.jpg" alt="星野畳店" class="header__logo-img">
+        <span class="header__logo-text">
+          <span class="header__logo-name">星野畳店</span>
+          <span class="header__logo-en">Hoshino Tatamiten</span>
+        </span>
+      </a>
+
+      <nav class="header__nav" aria-label="メインナビゲーション">
+        <a href="greeting.html">ごあいさつ</a>
+        <a href="price.html">料金表</a>
+        <a href="flow.html">ご依頼の流れ</a>
+        <a href="ex.html">施工事例</a>
+        <a href="calmo.html">CALMO（置き畳）</a>
+      </nav>
+
+      <div class="header__contact">
+        <a href="tel:048-711-3222" class="header__contact-tel">
+          📞 <span>048-711-3222</span>
+        </a>
+        <a href="contact.html" class="header__contact-btn header__contact-mail">
+          ✉ お問い合わせ
+        </a>
+        <a href="https://lin.ee/NYs3I5o" target="_blank" rel="noopener" class="header__contact-btn header__contact-line">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:5px;"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+          LINE問い合わせ
+        </a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ドロワーメニュー -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <nav class="drawer" id="drawer" aria-label="ドロワーナビゲーション">
+    <button class="drawer__close" id="drawerClose" aria-label="メニューを閉じる">✕</button>
+    <ul class="drawer__nav">
+      <li><a href="greeting.html">ごあいさつ・店舗紹介</a></li>
+      <li><a href="price.html">料金表</a></li>
+      <li><a href="flow.html">ご依頼の流れ</a></li>
+      <li><a href="ex.html">施工事例</a></li>
+      <li><a href="calmo.html">CALMOについて</a></li>
+      <li><a href="contact.html">お問い合わせ</a></li>
+    </ul>
+    <div style="margin-top:2rem;text-align:center;">
+      <p style="font-size:0.875rem;color:#666;margin-bottom:0.5rem;">営業時間 8:00〜19:00（土日対応可）</p>
+      <a href="tel:048-711-3222" class="btn btn-primary" style="width:100%;justify-content:center;">
+        📞 048-711-3222
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== ヒーロー ========== -->
+  <section class="hero" aria-label="メインビジュアル">
+    <div class="hero__slide is-active">
+      <div class="hero__bg" style="background-image:url('src/images/hero1.jpg');"></div>
+    </div>
+    <div class="hero__slide" style="background-color:#e8e4dc;">
+      <div class="hero__bg" style="background-image:url('src/images/スクリーンショット 2026-05-21 172308_cleanup.png');background-size:contain;background-repeat:no-repeat;background-position:center top;"></div>
+    </div>
+    <div class="hero__slide">
+      <div class="hero__bg" style="background-image:url('src/images/hero3.png');background-position:center 90%;"></div>
+    </div>
+    <div class="hero__slide">
+      <div class="hero__bg" style="background-image:url('src/images/hero2.png');background-size:contain;background-repeat:no-repeat;background-color:#f0ede4;background-position:center center;inset:0;"></div>
+    </div>
+
+    <div class="hero__overlay"></div>
+
+    <!-- 右半分：理念テキスト -->
+    <div class="hero__philosophy">
+      <p class="hero__philosophy-title">綺麗になった和の空間で<br>喜んでいただきたい</p>
+      <p class="hero__philosophy-text">
+        星野畳店はあなた様が和のリフォームをして良かった、そしてその後も快適にゆったり落ち着いてくつろげる和室作りをご提案していきたいと考えております。
+      </p>
+      <p class="hero__philosophy-text">
+        畳というちょっとわかりづらい商品をより理解して頂く為に、現物の畳表を触って、見て、説明をさせていただきます。
+      </p>
+      <p class="hero__philosophy-text">
+        完成した和室で「お願いして良かった」「またお願いね」の声を第一に、２回、３回と選ばれる畳店を目指しています。
+      </p>
+    </div>
+
+    <!-- 左下：メインタイトル -->
+    <div class="hero__content">
+      <p class="hero__eyecatch">さいたま市南区 ／ 創業50年以上</p>
+      <h1 class="hero__title">
+        畳のことなら、<br>星野畳店へ。
+      </h1>
+      <p class="hero__subtitle">表替え・新畳・襖・障子・置き畳 CALMO</p>
+      <div class="hero__buttons">
+        <div class="hero__buttons-row">
+          <a href="ex.html" class="hero__cta-btn hero__cta-case">施工事例を見る</a>
+          <a href="tel:048-711-3222" class="hero__cta-btn hero__cta-tel">📞 048-711-3222</a>
+        </div>
+        <div class="hero__buttons-row">
+          <a href="contact.html" class="hero__cta-btn hero__cta-mail">✉ メール問い合わせ</a>
+          <a href="https://lin.ee/NYs3I5o" target="_blank" rel="noopener" class="hero__cta-btn hero__cta-line">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:5px;"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+            LINE問い合わせ
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- スライドインジケーター -->
+    <div class="hero__dots" id="heroDots">
+      <button class="hero__dot is-active" onclick="goSlide(0)" aria-label="1枚目"></button>
+      <button class="hero__dot" onclick="goSlide(1)" aria-label="2枚目"></button>
+      <button class="hero__dot" onclick="goSlide(2)" aria-label="3枚目"></button>
+      <button class="hero__dot" onclick="goSlide(3)" aria-label="4枚目"></button>
+    </div>
+  </section>
+
+
+  <!-- ========== 特徴3点 ========== -->
+  <section class="features" aria-label="星野畳店の特徴">
+    <div class="container">
+      <div class="features__grid">
+        <div class="feature-item fade-in">
+          <div class="feature-item__icon">🏠</div>
+          <div class="feature-item__title">創業50年以上の実績</div>
+          <p class="feature-item__text">さいたま市南区白幡で地域に根ざした畳職人として、多くのお客様の和室を手がけてきました。</p>
+        </div>
+        <div class="feature-item fade-in">
+          <div class="feature-item__icon">🗓️</div>
+          <div class="feature-item__title">土日も対応・当日納品</div>
+          <p class="feature-item__text">朝お引取りして夕方には納品。土日祝も対応しています（8:00〜19:00）。</p>
+        </div>
+        <div class="feature-item fade-in">
+          <div class="feature-item__icon">📋</div>
+          <div class="feature-item__title">見本帳持参でお見積り</div>
+          <p class="feature-item__text">実際の畳サンプルをお持ちして、素材・色・価格をその場でご確認いただけます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== サービス一覧 ========== -->
+  <section class="section" aria-label="サービス一覧">
+    <div class="container">
+      <span class="section-title-en">Services</span>
+      <h2 class="section-title">サービス一覧</h2>
+      <p style="text-align:center;font-size:0.85rem;color:var(--color-text-sub);margin-top:-0.5rem;margin-bottom:1.5rem;">
+        👆 各カードをクリックすると、詳しい内容・料金ページへ移動します
+      </p>
+
+      <div class="services__grid">
+        <!-- 1. 表替え -->
+        <a href="price.html#omote" class="service-card fade-in">
+          <div class="service-card__img" style="height:200px;overflow:hidden;">
+            <img src="src/images/スクリーンショット 2026-05-21 172308.png" alt="畳の表替え施工例" style="width:100%;height:100%;object-fit:cover;object-position:center;">
+          </div>
+          <div class="service-card__body">
+            <div class="service-card__title">表替え</div>
+            <p class="service-card__desc">畳表だけを新しくします。5〜7年が交換の目安です。</p>
+          </div>
+        </a>
+        <!-- 2. ダイケン・セキスイ -->
+        <a href="price.html#daiken-sekisui" class="service-card fade-in">
+          <div class="service-card__img" style="height:200px;overflow:hidden;">
+            <img src="src/images/スクリーンショット 2026-05-22 071834_cleanup.png" alt="ダイケン健やかおもて・セキスイ美草の施工例" style="width:100%;height:100%;object-fit:cover;object-position:center;">
+          </div>
+          <div class="service-card__body">
+            <div class="service-card__title" style="font-size:0.85rem;">ダイケン健やかおもて・セキスイ美草</div>
+            <p class="service-card__desc">耐久性・防カビ・色あせしにくい機能性の高い樹脂畳表。モダンな空間に。</p>
+          </div>
+        </a>
+        <!-- 3. わんにゃんスマイル畳（画像準備中） -->
+        <a href="price.html#wannyan" class="service-card fade-in">
+          <div class="service-card__img" style="height:200px;overflow:hidden;">
+            <img src="src/images/24423.jpg" alt="わんにゃんスマイル畳の施工例" style="width:100%;height:100%;object-fit:cover;object-position:center;">
+          </div>
+          <div class="service-card__body">
+            <div class="service-card__title">わんにゃんスマイル畳</div>
+            <p class="service-card__desc">ペットにやさしい抗菌・防虫加工。引っかき傷に強く、お手入れ簡単。</p>
+          </div>
+        </a>
+        <!-- 4. 襖・障子 -->
+        <a href="price.html#fusuma" class="service-card fade-in">
+          <div class="service-card__img" style="height:200px;overflow:hidden;">
+            <img src="src/images/スクリーンショット 2026-05-22 113152_cleanup.png" alt="障子・襖の施工例" style="width:100%;height:100%;object-fit:cover;object-position:center;">
+          </div>
+          <div class="service-card__body">
+            <div class="service-card__title">襖・障子</div>
+            <p class="service-card__desc">襖紙・障子紙の張替えも承ります。豊富な柄からお選びください。</p>
+          </div>
+        </a>
+        <!-- 5. CALMO（置き畳） -->
+        <a href="calmo.html" class="service-card fade-in">
+          <div class="service-card__img" style="height:200px;overflow:hidden;">
+            <img src="src/images/スクリーンショット 2026-05-22 115941_cleanup.png" alt="CALMO置き畳の施工例" style="width:100%;height:100%;object-fit:cover;object-position:center;">
+          </div>
+          <div class="service-card__body">
+            <div class="service-card__title">CALMO（置き畳）</div>
+            <p class="service-card__desc">フローリングに置くだけ。豊富なカラーでモダンな和空間を。</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 施工事例 ========== -->
+  <section class="section section-bg" aria-label="施工事例">
+    <div class="container">
+      <span class="section-title-en">Works</span>
+      <h2 class="section-title">施工事例</h2>
+
+      <div class="cases__grid">
+        <article class="case-card fade-in">
+          <div class="case-card__img" style="height:200px;overflow:hidden;">
+            <img src="src/images/スクリーンショット 2026-05-23 115842.png" alt="さいたま市南区 続き間 畳表替え" style="width:100%;height:100%;object-fit:cover;object-position:top;">
+          </div>
+          <div class="case-card__body">
+            <p class="case-card__date">📍 さいたま市南区・戸建て</p>
+            <h3 class="case-card__title">8畳＋6畳 続き間 表替え</h3>
+            <p class="case-card__text">8畳と6畳の続き間の畳表替えをさせていただきました。伝統的な和室の空間を演出されていて、とても素敵なお部屋です。</p>
+            <div class="case-card__tags">
+              <span class="tag">#表替え</span><span class="tag">#国産い草</span><span class="tag">#星美表いろどり</span><span class="tag">#続き間</span>
+            </div>
+          </div>
+        </article>
+        <article class="case-card fade-in">
+          <div class="case-card__img" style="height:200px;overflow:hidden;">
+            <img src="src/images/スクリーンショット 2026-05-23 115814.png" alt="さいたま市浦和区 新築マンション 新畳" style="width:100%;height:100%;object-fit:cover;object-position:top;">
+          </div>
+          <div class="case-card__body">
+            <p class="case-card__date">📍 さいたま市浦和区・マンション</p>
+            <h3 class="case-card__title">新築マンション 琉球畳風 新畳</h3>
+            <p class="case-card__text">引越し日時に合わせて寸法を取り、施工・設置まで行いました。市松模様がとても素敵で、明るい和室になりました。</p>
+            <div class="case-card__tags">
+              <span class="tag">#新畳</span><span class="tag">#セキスイ美草</span><span class="tag">#市松グリーン</span><span class="tag">#縁なし</span>
+            </div>
+          </div>
+        </article>
+        <article class="case-card fade-in">
+          <div class="case-card__img" style="height:200px;overflow:hidden;">
+            <img src="src/images/スクリーンショット 2026-05-23 115926.png" alt="さいたま市緑区 畳・襖・障子 まとめてリフォーム" style="width:100%;height:100%;object-fit:cover;object-position:top;">
+          </div>
+          <div class="case-card__body">
+            <p class="case-card__date">📍 さいたま市緑区・戸建て</p>
+            <h3 class="case-card__title">畳・襖・障子 まとめてリフォーム</h3>
+            <p class="case-card__text">6畳と8畳の和室の畳・襖・障子の張り替えをさせていただきました。張り替え後、部屋が明るくなったと大変喜んでいただきました。</p>
+            <div class="case-card__tags">
+              <span class="tag">#表替え</span><span class="tag">#国産い草</span><span class="tag">#星美表いろどり</span><span class="tag">#襖</span><span class="tag">#障子</span>
+            </div>
+          </div>
+        </article>
+        <article class="case-card fade-in">
+          <div class="case-card__img" style="height:200px;overflow:hidden;">
+            <img src="src/images/スクリーンショット 2026-05-23 115829.png" alt="さいたま市南区 ダイケン健やかおもて 表替え" style="width:100%;height:100%;object-fit:cover;object-position:top;">
+          </div>
+          <div class="case-card__body">
+            <p class="case-card__date">📍 さいたま市南区・戸建て</p>
+            <h3 class="case-card__title">ダイケン 表替え（亜麻色）</h3>
+            <p class="case-card__text">日が当たっても変色しないダイケン表をご希望。建具が茶系のため畳の色も同じ茶系で統一し、落ち着きのある素敵なお部屋に生まれ変わりました。</p>
+            <div class="case-card__tags">
+              <span class="tag">#表替え</span><span class="tag">#ダイケン</span><span class="tag">#清流</span><span class="tag">#亜麻色</span>
+            </div>
+          </div>
+        </article>
+        <article class="case-card fade-in">
+          <div class="case-card__img" style="height:200px;overflow:hidden;">
+            <img src="src/images/スクリーンショット 2026-05-23 115749.png" alt="さいたま市見沼区 置き畳 CALMO" style="width:100%;height:100%;object-fit:cover;object-position:top;">
+          </div>
+          <div class="case-card__body">
+            <p class="case-card__date">📍 さいたま市見沼区・マンション</p>
+            <h3 class="case-card__title">置き畳（ダイケン・乳白色）</h3>
+            <p class="case-card__text">フローリングでごろごろするには固いので、クッション性のある置き畳をオーダー。お子様が畳の上をごろごろしていたのが印象的でした。</p>
+            <div class="case-card__tags">
+              <span class="tag">#置き畳</span><span class="tag">#ダイケン</span><span class="tag">#清流</span><span class="tag">#乳白色</span><span class="tag">#CALMO</span>
+            </div>
+          </div>
+        </article>
+        <article class="case-card fade-in">
+          <div class="case-card__img" style="height:200px;overflow:hidden;">
+            <img src="src/images/スクリーンショット 2026-05-23 115905.png" alt="さいたま市緑区 ベッド用畳 セキスイ美草" style="width:100%;height:100%;object-fit:cover;object-position:top;">
+          </div>
+          <div class="case-card__body">
+            <p class="case-card__date">📍 さいたま市緑区・マンション</p>
+            <h3 class="case-card__title">ベッド用 畳（セキスイ美草）</h3>
+            <p class="case-card__text">腰の痛みが和らぐというお声からベッドに畳を敷きたいとのご依頼。横に2枚使用しベッドのサイズに収まるよう仕上げました。</p>
+            <div class="case-card__tags">
+              <span class="tag">#新畳</span><span class="tag">#セキスイ美草</span><span class="tag">#市松ダークブラウン</span><span class="tag">#ベッド用畳</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align:center;margin-top:2.5rem;">
+        <a href="ex.html" class="btn btn-outline">施工事例をもっと見る</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ご依頼の流れ ========== -->
+  <section class="section" aria-label="ご依頼の流れ">
+    <div class="container">
+      <span class="section-title-en">Flow</span>
+      <h2 class="section-title">ご依頼の流れ</h2>
+
+      <div class="steps">
+        <div class="step fade-in">
+          <div class="step__number">1</div>
+          <div class="step__body">
+            <div class="step__title">お問い合わせ</div>
+            <p class="step__text">お電話またはお問い合わせフォームよりご連絡ください。</p>
+          </div>
+        </div>
+        <div class="step fade-in">
+          <div class="step__number">2</div>
+          <div class="step__body">
+            <div class="step__title">ご訪問・お見積り</div>
+            <p class="step__text">見本帳を持参してご訪問。その場でお見積りと工事日を決定します。</p>
+          </div>
+        </div>
+        <div class="step fade-in">
+          <div class="step__number">3</div>
+          <div class="step__body">
+            <div class="step__title">前日確認</div>
+            <p class="step__text">工事前日にご予定を確認のためお電話します。</p>
+          </div>
+        </div>
+        <div class="step fade-in">
+          <div class="step__number">4</div>
+          <div class="step__body">
+            <div class="step__title">作業・納品</div>
+            <p class="step__text">朝お引取りして加工し、夕方までに納品します。</p>
+          </div>
+        </div>
+        <div class="step fade-in">
+          <div class="step__number">5</div>
+          <div class="step__body">
+            <div class="step__title">お支払い</div>
+            <p class="step__text">納品時に現金、または後日お振込みにて承ります。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== お客様の声 ========== -->
+  <section class="section section-bg" aria-label="お客様の声">
+    <div class="container">
+      <span class="section-title-en">Reviews</span>
+      <h2 class="section-title">お客様の声</h2>
+
+      <div class="reviews__grid">
+        <!-- DA WA様 -->
+        <div class="review-card fade-in">
+          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.75rem;">
+            <div style="width:36px;height:36px;border-radius:50%;background:#bdbdbd;display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:0.85rem;flex-shrink:0;">D</div>
+            <div>
+              <p style="font-weight:700;font-size:0.875rem;margin:0;color:var(--color-text);">DA WA</p>
+              <p style="font-size:0.75rem;color:var(--color-text-sub);margin:0;">2か月前</p>
+            </div>
+            <img src="https://www.google.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="Google" style="height:16px;margin-left:auto;opacity:0.6;">
+          </div>
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__text">「6畳の和室を琉球風畳（建材床）で新調していただきました。打ち合わせでは畳を実際に剥がして構造まで丁寧に説明してくださり、とても信頼できる印象を受けました。仕上がりも美しく、部屋全体がすっきりとした印象になり大変満足しています。地元で信頼できる畳店さんだと思います。」</p>
+        </div>
+        <!-- toshi moto様 -->
+        <div class="review-card fade-in">
+          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.75rem;">
+            <div style="width:36px;height:36px;border-radius:50%;background:#f4a261;display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:0.85rem;flex-shrink:0;">T</div>
+            <div>
+              <p style="font-weight:700;font-size:0.875rem;margin:0;color:var(--color-text);">toshi moto</p>
+              <p style="font-size:0.75rem;color:var(--color-text-sub);margin:0;">3か月前・ローカルガイド</p>
+            </div>
+            <img src="https://www.google.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="Google" style="height:16px;margin-left:auto;opacity:0.6;">
+          </div>
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__text">「和室6畳の畳、襖、天袋、障子の張替をしたくお願いしました。こちらの希望に真摯に向き合い丁寧なアドバイスをもらいながら希望通りの張替ができ、大変満足しています。敷居滑りの張替の手間賃をサービスしてもらいました。仕事は丁寧で接客対応が素晴らしかったです。」</p>
+        </div>
+        <!-- TMK SMZ様 -->
+        <div class="review-card fade-in">
+          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.75rem;">
+            <div style="width:36px;height:36px;border-radius:50%;background:#3d6b4f;display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:0.85rem;flex-shrink:0;">T</div>
+            <div>
+              <p style="font-weight:700;font-size:0.875rem;margin:0;color:var(--color-text);">TMK SMZ</p>
+              <p style="font-size:0.75rem;color:var(--color-text-sub);margin:0;">1年前・ローカルガイド</p>
+            </div>
+            <img src="https://www.google.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="Google" style="height:16px;margin-left:auto;opacity:0.6;">
+          </div>
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__text">「現地見積もりから畳の入れ替えまで、スムーズでスピーディー、いいお仕事していただきました。大変満足です！」</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CALMO紹介 ========== -->
+  <section class="section" aria-label="CALMOブランド紹介">
+    <div class="container">
+      <!-- 上：見出し・説明文（全幅） -->
+      <div style="margin-bottom:2rem;">
+        <span class="section-title-en" style="text-align:left;">Original Brand</span>
+        <h2 class="section-title" style="text-align:left;">置き畳 <em style="font-style:normal;color:var(--color-accent);">CALMO</em></h2>
+        <p style="color:var(--color-text-sub);">「落ち着く（Calm）」と「今どき（Modern）」を組み合わせた、星野畳店オリジナルの置き畳ブランド。フローリングに置くだけで和の雰囲気を演出できます。</p>
+      </div>
+      <!-- 下：左テキスト＋右画像 -->
+      <div style="display:grid;grid-template-columns:1fr 1.8fr;gap:2.5rem;align-items:center;">
+        <div>
+          <ul style="margin-bottom:1.5rem;display:flex;flex-direction:column;gap:0.5rem;">
+            <li style="font-size:0.9375rem;">✅ 3シリーズ・豊富なカラー展開</li>
+            <li style="font-size:0.9375rem;">✅ 工事不要・賃貸でも使用可能</li>
+            <li style="font-size:0.9375rem;">✅ 国内外問わず人気のデザイン</li>
+          </ul>
+          <a href="calmo.html" class="btn" style="background:linear-gradient(135deg,#f8e8e0 0%,#f0d8c0 30%,#d8e8c8 65%,#c8d8b8 100%);color:#382820;border:none;">CALMOを詳しく見る</a>
+        </div>
+        <!-- 右：3枚の画像カード -->
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;">
+          <!-- 目積-乳白色 -->
+          <div style="border-radius:0.75rem;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,0.1);background:#fff;">
+            <img src="src/images/meseki3_nyu_6080.png" alt="目積-乳白色" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;">
+            <div style="padding:1rem;border-top:2px solid var(--color-border);">
+              <p style="font-family:var(--font-heading);font-weight:700;font-size:0.9rem;color:var(--color-text);margin-bottom:0.4rem;">目積-乳白色</p>
+              <p style="font-size:0.78rem;color:var(--color-text-sub);line-height:1.65;margin:0;">暖かく落ち着いた高級感を演出する色として、どんな雰囲気にも合わせることができます。</p>
+            </div>
+          </div>
+          <!-- 市松-リーフグリーン -->
+          <div style="border-radius:0.75rem;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,0.1);background:#fff;">
+            <img src="src/images/ichi1_green_6130.png" alt="市松-リーフグリーン" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;">
+            <div style="padding:1rem;border-top:2px solid var(--color-border);">
+              <p style="font-family:var(--font-heading);font-weight:700;font-size:0.9rem;color:var(--color-text);margin-bottom:0.4rem;">市松-リーフグリーン</p>
+              <p style="font-size:0.78rem;color:var(--color-text-sub);line-height:1.65;margin:0;">伝統と現代の粋を集めた究極の現代和風色。</p>
+            </div>
+          </div>
+          <!-- マーブル-ウッディー -->
+          <div style="border-radius:0.75rem;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,0.1);background:#fff;">
+            <img src="src/images/marble1_woody_6070.png" alt="マーブル-ウッディー" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;">
+            <div style="padding:1rem;border-top:2px solid var(--color-border);">
+              <p style="font-family:var(--font-heading);font-weight:700;font-size:0.9rem;color:var(--color-text);margin-bottom:0.4rem;">マーブル-ウッディー</p>
+              <p style="font-size:0.78rem;color:var(--color-text-sub);line-height:1.65;margin:0;">ヘリ無しにおすすめの畳。自然な木々の色。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== お問い合わせCTA ========== -->
+
+  <section class="cta" aria-label="お問い合わせ">
+    <div class="container">
+      <div class="cta__deco"><span>✦</span></div>
+      <h2 class="cta__title">まずはお気軽にご相談ください</h2>
+      <p class="cta__text">見積もり・ご相談は無料です。<br>畳の見本帳をお持ちしてご自宅へお伺いします。</p>
+      <p class="cta__hours">営業時間 8:00〜19:00（土日・祝日も対応可）</p>
+      <div class="cta__buttons">
+        <a href="tel:048-711-3222" class="header__contact-tel cta__contact-btn">
+          📞 <span>048-711-3222</span>
+        </a>
+        <a href="contact.html" class="header__contact-btn header__contact-mail cta__contact-btn">
+          ✉ お問い合わせ
+        </a>
+        <a href="https://lin.ee/NYs3I5o" target="_blank" rel="noopener" class="header__contact-btn header__contact-line cta__contact-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:5px;"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+          LINE問い合わせ
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== フッター ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand-name">星野畳店</p>
+          <p class="footer__tagline">さいたま市で50年以上、地域とともに。</p>
+          <div class="footer__sns">
+            <a href="https://www.instagram.com/hoshinotatami/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              📷
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <p class="footer__nav-title">Pages</p>
+          <ul class="footer__nav-list">
+            <li><a href="greeting.html">ごあいさつ・店舗紹介</a></li>
+            <li><a href="price.html">料金表</a></li>
+            <li><a href="flow.html">ご依頼の流れ</a></li>
+            <li><a href="ex.html">施工事例</a></li>
+            <li><a href="calmo.html">CALMOについて</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__nav-title">Access</p>
+          <div class="footer__info">
+            <p>〒336-0022</p>
+            <p>埼玉県さいたま市南区白幡6-1-18</p>
+            <p>TEL: <a href="tel:048-711-3222" style="color:#aaa;">048-711-3222</a></p>
+            <p>営業時間: 8:00〜19:00</p>
+            <p>土日・祝日も対応可</p>
+            <p><a href="mailto:hoshinotatamiten@gmail.com" style="color:#aaa;">hoshinotatamiten@gmail.com</a></p>
+          </div>
+          <!-- Googleマップ埋め込み（実際の運用時に差し替え） -->
+          <div style="margin-top:1rem;background:#333;border-radius:8px;height:120px;display:flex;align-items:center;justify-content:center;font-size:0.875rem;color:#888;">
+            📍 Googleマップ（実装時に埋め込み）
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2025 星野畳店 All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== スマホ固定電話ボタン ========== -->
+  <a href="tel:048-711-3222" class="btn-call-fixed" aria-label="星野畳店に電話する">
+    📞 電話で問い合わせる（無料）
+  </a>
+
+  <!-- JS -->
+  <script src="src/js/main.js"></script>
+</body>
+</html>

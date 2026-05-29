@@ -1,0 +1,413 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>置き畳 CALMO | 星野畳店オリジナルブランド</title>
+  <meta name="description" content="星野畳店オリジナルの置き畳ブランドCALMO。目積・市松・マーブルの3シリーズ、豊富なカラー展開。フローリングに置くだけで和の空間を演出。">
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="src/images/logo-mark.jpg" alt="星野畳店" class="header__logo-img">
+        <span class="header__logo-text">
+          <span class="header__logo-name">星野畳店</span>
+          <span class="header__logo-en">Hoshino Tatamiten</span>
+        </span>
+      </a>
+      <nav class="header__nav" aria-label="メインナビゲーション">
+        <a href="greeting.html">ごあいさつ</a>
+        <a href="price.html">料金表</a>
+        <a href="flow.html">ご依頼の流れ</a>
+        <a href="ex.html">施工事例</a>
+        <a href="calmo.html">CALMO（置き畳）</a>
+      </nav>
+
+      <div class="header__contact">
+        <a href="tel:048-711-3222" class="header__contact-tel">
+          📞 <span>048-711-3222</span>
+        </a>
+        <a href="contact.html" class="header__contact-btn header__contact-mail">
+          ✉ お問い合わせ
+        </a>
+        <a href="https://lin.ee/NYs3I5o" target="_blank" rel="noopener" class="header__contact-btn header__contact-line">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:5px;"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+          LINE問い合わせ
+        </a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <nav class="drawer" id="drawer">
+    <button class="drawer__close" id="drawerClose">✕</button>
+    <ul class="drawer__nav">
+      <li><a href="greeting.html">ごあいさつ・店舗紹介</a></li>
+      <li><a href="price.html">料金表</a></li>
+      <li><a href="flow.html">ご依頼の流れ</a></li>
+      <li><a href="ex.html">施工事例</a></li>
+      <li><a href="calmo.html">CALMOについて</a></li>
+      <li><a href="contact.html">お問い合わせ</a></li>
+    </ul>
+  </nav>
+
+  <!-- ヒーロー -->
+  <div style="background:linear-gradient(135deg,#f8e8e0 0%,#f0d8c0 30%,#d8e8c8 65%,#c8d8b8 100%);padding:4rem 0 3rem;color:#382820;text-align:center;">
+    <div class="container">
+      <span style="font-family:var(--font-en);font-size:0.875rem;letter-spacing:0.2em;opacity:0.8;">Original Brand</span>
+      <h1 style="font-family:var(--font-en);font-size:3rem;font-weight:600;margin:0.5rem 0;letter-spacing:0.05em;">CALMO</h1>
+      <p style="font-family:var(--font-heading);font-size:1rem;opacity:0.9;margin-bottom:1.5rem;">置き畳 ／ Calm × Modern</p>
+      <p style="font-size:0.9375rem;opacity:0.85;max-width:480px;margin:0 auto;line-height:1.8;">「落ち着く（Calm）」と「今どき（Modern）」を組み合わせた、<br>星野畳店オリジナルの置き畳ブランド。</p>
+    </div>
+  </div>
+
+  <!-- コンセプト -->
+  <section class="section">
+    <div class="container">
+      <span class="section-title-en">Concept</span>
+      <h2 class="section-title">CALMOとは</h2>
+      <div style="max-width:680px;margin:0 auto;text-align:center;">
+        <p style="font-size:1rem;line-height:2;color:var(--color-text-sub);margin-bottom:2rem;">
+          国籍や世代を問わず、誰もが手に取りやすい畳を。<br>
+          そんな想いから生まれた星野畳店のオリジナルブランドです。<br>
+          フローリングに置くだけで、和の温もりをお部屋にプラスできます。
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;text-align:left;">
+          <div style="background:var(--color-surface);border-radius:var(--radius-md);padding:1.25rem;">
+            <div style="font-size:1.5rem;margin-bottom:0.5rem;">🏠</div>
+            <strong style="font-size:0.9375rem;">工事不要</strong>
+            <p style="font-size:0.875rem;color:var(--color-text-sub);margin-top:4px;">置くだけで設置完了。賃貸でもOK。</p>
+          </div>
+          <div style="background:var(--color-surface);border-radius:var(--radius-md);padding:1.25rem;">
+            <div style="font-size:1.5rem;margin-bottom:0.5rem;">🎨</div>
+            <strong style="font-size:0.9375rem;">豊富なカラー</strong>
+            <p style="font-size:0.875rem;color:var(--color-text-sub);margin-top:4px;">3シリーズ・全19色展開。</p>
+          </div>
+          <div style="background:var(--color-surface);border-radius:var(--radius-md);padding:1.25rem;">
+            <div style="font-size:1.5rem;margin-bottom:0.5rem;">🦶</div>
+            <strong style="font-size:0.9375rem;">素足に優しい</strong>
+            <p style="font-size:0.875rem;color:var(--color-text-sub);margin-top:4px;">天然い草の肌触りが気持ちいい。</p>
+          </div>
+          <div style="background:var(--color-surface);border-radius:var(--radius-md);padding:1.25rem;">
+            <div style="font-size:1.5rem;margin-bottom:0.5rem;">🌍</div>
+            <strong style="font-size:0.9375rem;">国内外問わず人気</strong>
+            <p style="font-size:0.875rem;color:var(--color-text-sub);margin-top:4px;">インバウンド需要にも対応したデザイン。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- シリーズ紹介 -->
+  <section class="section section-bg">
+    <div class="container">
+      <span class="section-title-en">Series</span>
+      <h2 class="section-title">3つのシリーズ</h2>
+
+      <div style="display:flex;flex-direction:column;gap:2rem;max-width:800px;margin:0 auto;">
+
+        <!-- 目積シリーズ -->
+        <div style="background:#fff;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--color-border);box-shadow:var(--shadow-sm);">
+          <!-- グラデーションヘッダー -->
+          <div style="background:linear-gradient(135deg,#c8d8b8,#8aaa70);height:120px;display:flex;align-items:center;justify-content:center;">
+            <div style="text-align:center;color:#fff;">
+              <div style="font-size:2rem;line-height:1;">🌿</div>
+              <p style="font-family:var(--font-heading);font-size:1.2rem;font-weight:700;margin:0.4rem 0 0;">目積シリーズ</p>
+            </div>
+          </div>
+          <!-- 説明・バッジ -->
+          <div style="padding:1.1rem 1.4rem 1rem;">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.6rem;gap:0.75rem;">
+              <div style="display:flex;align-items:flex-start;gap:2.5rem;flex:1;">
+                <span style="font-size:0.85rem;color:var(--color-text-sub);white-space:nowrap;padding-top:0.1rem;">7色展開</span>
+                <div style="font-size:0.72rem;color:var(--color-text-sub);line-height:1.75;">
+                  <div>素材：樹脂　厚み：1.5㎝　重量：4.5㎏</div>
+                  <div>※サイズ、厚みはご希望の長さに変えられます。（写真のサイズは82㎝×82㎝）</div>
+                </div>
+              </div>
+              <strong style="color:var(--color-primary);font-size:1.1rem;white-space:nowrap;">¥13,200（税込）〜</strong>
+            </div>
+            <p style="font-size:0.875rem;color:var(--color-text-sub);margin:0 0 0.85rem;line-height:1.65;">縁なしタイプ。自然な風合いが特徴で、どんな空間にも馴染みます。</p>
+            <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:1.2rem;">
+              <span style="background:#c8a46a;color:#fff;padding:4px 12px;border-radius:100px;font-size:0.78rem;">亜麻色</span>
+              <span style="background:#4a4a4a;color:#fff;padding:4px 12px;border-radius:100px;font-size:0.78rem;">墨染色</span>
+              <span style="background:#ede8dc;color:#888;padding:4px 12px;border-radius:100px;font-size:0.78rem;border:1px solid #ddd;">乳白色</span>
+              <span style="background:#a0a8a8;color:#fff;padding:4px 12px;border-radius:100px;font-size:0.78rem;">銀鼠色</span>
+              <span style="background:#82b050;color:#fff;padding:4px 12px;border-radius:100px;font-size:0.78rem;">若草色</span>
+              <span style="background:#3a6aaa;color:#fff;padding:4px 12px;border-radius:100px;font-size:0.78rem;">藍色</span>
+              <span style="background:#e8aab8;color:#fff;padding:4px 12px;border-radius:100px;font-size:0.78rem;">薄桜色</span>
+            </div>
+            <!-- 3列グリッド -->
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.75rem;">
+              <div>
+                <img src="src/images/meseki1_ama_6088.png" alt="目積-亜麻色" class="calmo-grid-img" style="width:100%;height:auto;border-radius:6px;display:block;">
+                <p style="font-size:0.8rem;font-weight:700;margin:0.4rem 0 0.2rem;color:var(--color-primary);">目積-亜麻色</p>
+                <p style="font-size:0.72rem;color:var(--color-text-sub);margin:0;line-height:1.5;">自然の森の中にいるよう安心させる木の色合いです。</p>
+              </div>
+              <div>
+                <img src="src/images/meseki2_sumi_6101.png" alt="目積-墨染色" class="calmo-grid-img" style="width:100%;height:auto;border-radius:6px;display:block;">
+                <p style="font-size:0.8rem;font-weight:700;margin:0.4rem 0 0.2rem;color:var(--color-primary);">目積-墨染色</p>
+                <p style="font-size:0.72rem;color:var(--color-text-sub);margin:0;line-height:1.5;">高級感や大人のイメージを与える落ち着いた雰囲気のある部屋で、一味違った和空間を演出できます。</p>
+              </div>
+              <div>
+                <img src="src/images/meseki3_nyu_6080.png" alt="目積-乳白色" class="calmo-grid-img" style="width:100%;height:auto;border-radius:6px;display:block;">
+                <p style="font-size:0.8rem;font-weight:700;margin:0.4rem 0 0.2rem;color:var(--color-primary);">目積-乳白色</p>
+                <p style="font-size:0.72rem;color:var(--color-text-sub);margin:0;line-height:1.5;">暖かく落ち着いた高級感を演出する色として、どんな雰囲気にも合わせることができます。</p>
+              </div>
+              <div>
+                <img src="src/images/meseki4_ginnezu_6095.png" alt="目積-銀鼠色" class="calmo-grid-img" style="width:100%;height:auto;border-radius:6px;display:block;">
+                <p style="font-size:0.8rem;font-weight:700;margin:0.4rem 0 0.2rem;color:var(--color-primary);">目積-銀鼠色</p>
+                <p style="font-size:0.72rem;color:var(--color-text-sub);margin:0;line-height:1.5;">江戸時代よりあらゆる色に適し得る"粋"な色とされており、長く好まれる色です。</p>
+              </div>
+              <div>
+                <img src="src/images/meseki5_wakakusa_6140.png" alt="目積-若草色" class="calmo-grid-img" style="width:100%;height:auto;border-radius:6px;display:block;">
+                <p style="font-size:0.8rem;font-weight:700;margin:0.4rem 0 0.2rem;color:var(--color-primary);">目積-若草色</p>
+                <p style="font-size:0.72rem;color:var(--color-text-sub);margin:0;line-height:1.5;">夏の草木の若の色をモチーフにした若草色は安らぎのある和空間を演出します。</p>
+              </div>
+              <div>
+                <img src="src/images/meseki6_ai_6085.png" alt="目積-藍色" class="calmo-grid-img" style="width:100%;height:auto;border-radius:6px;display:block;">
+                <p style="font-size:0.8rem;font-weight:700;margin:0.4rem 0 0.2rem;color:var(--color-primary);">目積-藍色</p>
+                <p style="font-size:0.72rem;color:var(--color-text-sub);margin:0;line-height:1.5;">モダンで落ち着きのある藍色は、シックさを思わせる沈みのある空間になります。</p>
+              </div>
+              <div>
+                <img src="src/images/meseki7_sakura_6098.png" alt="目積-薄桜色" class="calmo-grid-img" style="width:100%;height:auto;border-radius:6px;display:block;">
+                <p style="font-size:0.8rem;font-weight:700;margin:0.4rem 0 0.2rem;color:var(--color-primary);">目積-薄桜色</p>
+                <p style="font-size:0.72rem;color:var(--color-text-sub);margin:0;line-height:1.5;">桜色系の温かみと淡色系の落ち着きを組み込んだピンクは、心が瞬時にリラックスする色合いです。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 市松シリーズ -->
+        <div style="background:#fff;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--color-border);box-shadow:var(--shadow-sm);">
+          <div style="background:linear-gradient(135deg,#c0c8d8,#7080b0);height:120px;display:flex;align-items:center;justify-content:center;">
+            <div style="text-align:center;color:#fff;">
+              <div style="font-size:2rem;line-height:1;">▪▫</div>
+              <p style="font-family:var(--font-heading);font-size:1.2rem;font-weight:700;margin:0.4rem 0 0;">市松シリーズ</p>
+            </div>
+          </div>
+          <div style="padding:1.1rem 1.4rem 1rem;">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.6rem;gap:0.75rem;">
+              <div style="display:flex;align-items:flex-start;gap:2.5rem;flex:1;">
+                <span style="font-size:0.85rem;color:var(--color-text-sub);white-space:nowrap;padding-top:0.1rem;">6色展開</span>
+                <div style="font-size:0.72rem;color:var(--color-text-sub);line-height:1.75;">
+                  <div>素材：樹脂　厚み：1.5㎝　重量：4.5㎏</div>
+                  <div>※サイズ、厚みはご希望の長さに変えられます。（写真のサイズは82㎝×82㎝）</div>
+                </div>
+              </div>
+              <strong style="color:var(--color-primary);font-size:1.1rem;white-space:nowrap;">¥13,200（税込）〜</strong>
+            </div>
+            <p style="font-size:0.875rem;color:var(--color-text-sub);margin:0 0 0.85rem;line-height:1.65;">縁ありタイプ。伝統的な市松模様と現代的な配色を融合させたデザイン。</p>
+            <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:1.2rem;">
+              <span style="background:#5a8a50;color:#fff;padding:4px 12px;border-radius:100px;font-size:0.78rem;">リーフグリーン</span>
+              <span style="background:#909090;color:#fff;padding:4px 12px;border-radius:100px;font-size:0.78rem;">グレー</span>
+              <span style="background:#5a3a20;color:#fff;padding:4px 12px;border-radius:100px;font-size:0.78rem;">ダークブラウン</span>
+              <span style="background:#1a1a1a;color:#fff;padding:4px 12px;border-radius:100px;font-size:0.78rem;">ブラック</span>
+              <span style="background:#e090a0;color:#fff;padding:4px 12px;border-radius:100px;font-size:0.78rem;">ピンク</span>
+              <span style="background:#c8a820;color:#fff;padding:4px 12px;border-radius:100px;font-size:0.78rem;">イエロー</span>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.75rem;">
+              <div>
+                <img src="src/images/ichi1_green_6130.png" alt="市松-リーフグリーン" class="calmo-grid-img" style="width:100%;height:auto;border-radius:6px;display:block;">
+                <p style="font-size:0.8rem;font-weight:700;margin:0.4rem 0 0.2rem;color:var(--color-primary);">市松-リーフグリーン</p>
+                <p style="font-size:0.72rem;color:var(--color-text-sub);margin:0;line-height:1.5;">伝統と現代の粋を集めた究極の現代和風色。</p>
+              </div>
+              <div>
+                <img src="src/images/ichi2_gray_6118.png" alt="市松-グレー" class="calmo-grid-img" style="width:100%;height:auto;border-radius:6px;display:block;">
+                <p style="font-size:0.8rem;font-weight:700;margin:0.4rem 0 0.2rem;color:var(--color-primary);">市松-グレー</p>
+                <p style="font-size:0.72rem;color:var(--color-text-sub);margin:0;line-height:1.5;">どんな色にあわせても調和するグレーの市松模様がおもてなしの空間を演出します。</p>
+              </div>
+              <div>
+                <img src="src/images/ichi3_brown_6123.png" alt="市松-ダークブラウン" class="calmo-grid-img" style="width:100%;height:auto;border-radius:6px;display:block;">
+                <p style="font-size:0.8rem;font-weight:700;margin:0.4rem 0 0.2rem;color:var(--color-primary);">市松-ダークブラウン</p>
+                <p style="font-size:0.72rem;color:var(--color-text-sub);margin:0;line-height:1.5;">趣ある伝統的な市松に暖色カラーの良さを演出します。</p>
+              </div>
+              <div>
+                <img src="src/images/ichi4_black_6112.png" alt="市松-ブラック" class="calmo-grid-img" style="width:100%;height:auto;border-radius:6px;display:block;">
+                <p style="font-size:0.8rem;font-weight:700;margin:0.4rem 0 0.2rem;color:var(--color-primary);">市松-ブラック</p>
+                <p style="font-size:0.72rem;color:var(--color-text-sub);margin:0;line-height:1.5;">伝統と現代の粋を集めた「市松・ブラック」は現代和風の究極のかたちです。</p>
+              </div>
+              <div>
+                <img src="src/images/ichi5_pink_6106.png" alt="市松-ピンク" class="calmo-grid-img" style="width:100%;height:auto;border-radius:6px;display:block;">
+                <p style="font-size:0.8rem;font-weight:700;margin:0.4rem 0 0.2rem;color:var(--color-primary);">市松-ピンク</p>
+                <p style="font-size:0.72rem;color:var(--color-text-sub);margin:0;line-height:1.5;">斬新なピンクの淡い色合いが気軽にくつろげる雰囲気を演出します。</p>
+              </div>
+              <div>
+                <img src="src/images/ichi6_yellow_6108.png" alt="市松-イエロー" class="calmo-grid-img" style="width:100%;height:auto;border-radius:6px;display:block;">
+                <p style="font-size:0.8rem;font-weight:700;margin:0.4rem 0 0.2rem;color:var(--color-primary);">市松-イエロー</p>
+                <p style="font-size:0.72rem;color:var(--color-text-sub);margin:0;line-height:1.5;">黄金色の絶妙なバランスで心身ともにリラックスできる落ち着いた空間に。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- マーブルシリーズ -->
+        <div style="background:#fff;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--color-border);box-shadow:var(--shadow-sm);">
+          <div style="background:linear-gradient(135deg,#d8c8b0,#b09070);height:120px;display:flex;align-items:center;justify-content:center;">
+            <div style="text-align:center;color:#fff;">
+              <div style="font-size:2rem;line-height:1;">〜</div>
+              <p style="font-family:var(--font-heading);font-size:1.2rem;font-weight:700;margin:0.4rem 0 0;">マーブルシリーズ</p>
+            </div>
+          </div>
+          <div style="padding:1.1rem 1.4rem 1rem;">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.6rem;gap:0.75rem;">
+              <div style="display:flex;align-items:flex-start;gap:2.5rem;flex:1;">
+                <span style="font-size:0.85rem;color:var(--color-text-sub);white-space:nowrap;padding-top:0.1rem;">6色展開</span>
+                <div style="font-size:0.72rem;color:var(--color-text-sub);line-height:1.75;">
+                  <div>素材：樹脂　厚み：1.5㎝　重量：4.5㎏</div>
+                  <div>※サイズ、厚みはご希望の長さに変えられます。（写真のサイズは82㎝×82㎝）</div>
+                </div>
+              </div>
+              <strong style="color:var(--color-primary);font-size:1.1rem;white-space:nowrap;">¥13,200（税込）〜</strong>
+            </div>
+            <p style="font-size:0.875rem;color:var(--color-text-sub);margin:0 0 0.85rem;line-height:1.65;">縁なしタイプ。角度によって色の見え方が変わる上質な仕上がり。洋風インテリアとの相性も抜群。</p>
+            <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:1.2rem;">
+              <span style="background:#8a6a40;color:#fff;padding:4px 12px;border-radius:100px;font-size:0.78rem;">ウッディー</span>
+              <span style="background:#b0a898;color:#fff;padding:4px 12px;border-radius:100px;font-size:0.78rem;">ストーン</span>
+              <span style="background:#4a4a4a;color:#fff;padding:4px 12px;border-radius:100px;font-size:0.78rem;">ゼブラ</span>
+              <span style="background:#7aaa60;color:#fff;padding:4px 12px;border-radius:100px;font-size:0.78rem;">マスカット</span>
+              <span style="background:#e8a0a0;color:#fff;padding:4px 12px;border-radius:100px;font-size:0.78rem;">ピーチ</span>
+              <span style="background:#e88040;color:#fff;padding:4px 12px;border-radius:100px;font-size:0.78rem;">オレンジ</span>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.75rem;">
+              <div>
+                <img src="src/images/marble1_woody_6070.png" alt="マーブル-ウッディー" class="calmo-grid-img" style="width:100%;height:auto;border-radius:6px;display:block;">
+                <p style="font-size:0.8rem;font-weight:700;margin:0.4rem 0 0.2rem;color:var(--color-primary);">マーブル-ウッディー</p>
+                <p style="font-size:0.72rem;color:var(--color-text-sub);margin:0;line-height:1.5;">ヘリ無しにおすすめの畳。自然な木々の色。</p>
+              </div>
+              <div>
+                <img src="src/images/marble2_stone_6050.png" alt="マーブル-ストーン" class="calmo-grid-img" style="width:100%;height:auto;border-radius:6px;display:block;">
+                <p style="font-size:0.8rem;font-weight:700;margin:0.4rem 0 0.2rem;color:var(--color-primary);">マーブル-ストーン</p>
+                <p style="font-size:0.72rem;color:var(--color-text-sub);margin:0;line-height:1.5;">ヘリ無しにおすすめの畳。落ち着きのある灰と白の絶妙な色。</p>
+              </div>
+              <div>
+                <img src="src/images/marble3_zebra_6077.png" alt="マーブル-ゼブラ" class="calmo-grid-img" style="width:100%;height:auto;border-radius:6px;display:block;">
+                <p style="font-size:0.8rem;font-weight:700;margin:0.4rem 0 0.2rem;color:var(--color-primary);">マーブル-ゼブラ</p>
+                <p style="font-size:0.72rem;color:var(--color-text-sub);margin:0;line-height:1.5;">ヘリ無しにおすすめの畳。クールでシックなお部屋に白黒の絶妙模様。</p>
+              </div>
+              <div>
+                <img src="src/images/marble4_muscat_6063.png" alt="マーブル-マスカット" class="calmo-grid-img" style="width:100%;height:auto;border-radius:6px;display:block;">
+                <p style="font-size:0.8rem;font-weight:700;margin:0.4rem 0 0.2rem;color:var(--color-primary);">マーブル-マスカット</p>
+                <p style="font-size:0.72rem;color:var(--color-text-sub);margin:0;line-height:1.5;">ヘリ無しにおすすめの畳。綺麗なマスカット色。</p>
+              </div>
+              <div>
+                <img src="src/images/marble5_peach_6058.png" alt="マーブル-ピーチ" class="calmo-grid-img" style="width:100%;height:auto;border-radius:6px;display:block;">
+                <p style="font-size:0.8rem;font-weight:700;margin:0.4rem 0 0.2rem;color:var(--color-primary);">マーブル-ピーチ</p>
+                <p style="font-size:0.72rem;color:var(--color-text-sub);margin:0;line-height:1.5;">ヘリ無しにおすすめの畳。かわいいピーチ色。</p>
+              </div>
+              <div>
+                <img src="src/images/marble6_orange_6067.png" alt="マーブル-オレンジ" class="calmo-grid-img" style="width:100%;height:auto;border-radius:6px;display:block;">
+                <p style="font-size:0.8rem;font-weight:700;margin:0.4rem 0 0.2rem;color:var(--color-primary);">マーブル-オレンジ</p>
+                <p style="font-size:0.72rem;color:var(--color-text-sub);margin:0;line-height:1.5;">ヘリ無しにおすすめの畳。おいしそうなオレンジ色。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ご注意 -->
+      <div style="max-width:800px;margin:1rem auto 0;padding:0.75rem 1.1rem;background:#f0f4f8;border-left:3px solid #7080b0;border-radius:0 var(--radius-sm) var(--radius-sm) 0;">
+        <p style="font-size:0.85rem;font-weight:700;color:#5060a0;margin:0 0 0.25rem;">ご注意</p>
+        <p style="font-size:0.82rem;color:var(--color-text-sub);margin:0;line-height:1.65;">ここで掲載している製品は角度によって色の濃さの見え方が異なります。</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== お問い合わせCTA ========== -->
+  <section class="cta" aria-label="お問い合わせ">
+    <div class="container">
+      <div class="cta__deco"><span>✦</span></div>
+      <h2 class="cta__title">まずはお気軽にご相談ください</h2>
+      <p class="cta__text">見積もり・ご相談は無料です。<br>畳の見本帳をお持ちしてご自宅へお伺いします。</p>
+      <p class="cta__hours">営業時間 8:00〜19:00（土日・祝日も対応可）</p>
+      <div class="cta__buttons">
+        <a href="tel:048-711-3222" class="header__contact-tel cta__contact-btn">
+          📞 <span>048-711-3222</span>
+        </a>
+        <a href="contact.html" class="header__contact-btn header__contact-mail cta__contact-btn">
+          ✉ お問い合わせ
+        </a>
+        <a href="https://lin.ee/NYs3I5o" target="_blank" rel="noopener" class="header__contact-btn header__contact-line cta__contact-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:5px;"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+          LINE問い合わせ
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div><p class="footer__brand-name">星野畳店</p><p class="footer__tagline">さいたま市で50年以上、地域とともに。</p></div>
+        <div>
+          <p class="footer__nav-title">Pages</p>
+          <ul class="footer__nav-list">
+            <li><a href="greeting.html">ごあいさつ</a></li>
+            <li><a href="price.html">料金表</a></li>
+            <li><a href="flow.html">ご依頼の流れ</a></li>
+            <li><a href="ex.html">施工事例</a></li>
+            <li><a href="calmo.html">CALMO（置き畳）</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__nav-title">Access</p>
+          <div class="footer__info">
+            <p>〒336-0022 埼玉県さいたま市南区白幡6-1-18</p>
+            <p>TEL: <a href="tel:048-711-3222" style="color:#aaa;">048-711-3222</a></p>
+            <p>8:00〜19:00（土日・祝日可）</p>
+            <p><a href="mailto:hoshinotatamiten@gmail.com" style="color:#aaa;">hoshinotatamiten@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom"><p>© 2025 星野畳店 All Rights Reserved.</p></div>
+    </div>
+  </footer>
+
+  <div class="btn-call-fixed">
+    <a href="tel:048-711-3222" class="btn-call-fixed__tel">📞 048-711-3222</a>
+    <a href="contact.html" class="btn-call-fixed__mail">✉ お問い合わせ</a>
+    <a href="https://lin.ee/NYs3I5o" target="_blank" rel="noopener" class="btn-call-fixed__line">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:4px;"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>LINE
+    </a>
+  </div>
+  <!-- ライトボックス -->
+  <div id="lightbox" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.88);z-index:9999;align-items:center;justify-content:center;">
+    <img id="lightbox-img" src="" alt="" style="max-width:92%;max-height:90vh;object-fit:contain;border-radius:6px;box-shadow:0 8px 40px rgba(0,0,0,0.6);">
+    <button onclick="closeLightbox()" aria-label="閉じる" style="position:absolute;top:1rem;right:1.5rem;background:none;border:none;color:#fff;font-size:2.2rem;cursor:pointer;line-height:1;padding:0.2rem 0.5rem;">✕</button>
+  </div>
+
+  <script src="src/js/main.js"></script>
+  <script>
+    // ライトボックス
+    var lb = document.getElementById('lightbox');
+    var lbImg = document.getElementById('lightbox-img');
+    function openLightbox(src, alt) {
+      lbImg.src = src; lbImg.alt = alt;
+      lb.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      lb.style.display = 'none';
+      document.body.style.overflow = '';
+    }
+    // グリッド内の全画像にライトボックスを適用
+    document.querySelectorAll('.calmo-grid-img').forEach(function(img) {
+      img.style.cursor = 'zoom-in';
+      img.addEventListener('click', function() {
+        openLightbox(this.src, this.alt);
+      });
+    });
+    lb.addEventListener('click', closeLightbox);
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
+</body>
+</html>

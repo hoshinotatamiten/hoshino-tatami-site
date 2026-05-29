@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ごあいさつ・店舗紹介 | 星野畳店</title>
+  <meta name="description" content="さいたま市南区白幡で50年以上の実績。星野畳店代表・星野勇のごあいさつと店舗情報をご紹介します。">
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="src/images/logo-mark.jpg" alt="星野畳店" class="header__logo-img">
+        <span class="header__logo-text">
+          <span class="header__logo-name">星野畳店</span>
+          <span class="header__logo-en">Hoshino Tatamiten</span>
+        </span>
+      </a>
+      <nav class="header__nav" aria-label="メインナビゲーション">
+        <a href="greeting.html">ごあいさつ</a>
+        <a href="price.html">料金表</a>
+        <a href="flow.html">ご依頼の流れ</a>
+        <a href="ex.html">施工事例</a>
+        <a href="calmo.html">CALMO（置き畳）</a>
+      </nav>
+
+      <div class="header__contact">
+        <a href="tel:048-711-3222" class="header__contact-tel">
+          📞 <span>048-711-3222</span>
+        </a>
+        <a href="contact.html" class="header__contact-btn header__contact-mail">
+          ✉ お問い合わせ
+        </a>
+        <a href="https://lin.ee/NYs3I5o" target="_blank" rel="noopener" class="header__contact-btn header__contact-line">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:5px;"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+          LINE問い合わせ
+        </a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <nav class="drawer" id="drawer">
+    <button class="drawer__close" id="drawerClose">✕</button>
+    <ul class="drawer__nav">
+      <li><a href="greeting.html">ごあいさつ・店舗紹介</a></li>
+      <li><a href="price.html">料金表</a></li>
+      <li><a href="flow.html">ご依頼の流れ</a></li>
+      <li><a href="ex.html">施工事例</a></li>
+      <li><a href="calmo.html">CALMOについて</a></li>
+      <li><a href="contact.html">お問い合わせ</a></li>
+    </ul>
+  </nav>
+
+  <!-- ページヘッダー -->
+  <div style="background:linear-gradient(135deg,#f5e0cc 0%,#e8d4a0 33%,#c8d8b0 66%,#b8d4b8 100%);padding:3rem 0 2rem;color:#382820;text-align:center;">
+    <div class="container">
+      <span style="font-family:var(--font-en);font-size:0.875rem;letter-spacing:0.1em;opacity:0.7;">About Us</span>
+      <h1 style="font-family:var(--font-heading);font-size:1.75rem;margin-top:0.5rem;">ごあいさつ・店舗紹介</h1>
+    </div>
+  </div>
+
+  <!-- ごあいさつ -->
+  <section class="section">
+    <div class="container">
+      <div style="max-width:720px;margin:0 auto;">
+        <span class="section-title-en" style="text-align:left;">Greeting</span>
+        <h2 class="section-title" style="text-align:left;">代表よりごあいさつ</h2>
+
+        <div style="background:var(--color-surface);border-radius:var(--radius-lg);padding:2rem;margin-bottom:2rem;border-left:4px solid var(--color-primary);">
+          <p style="font-family:var(--font-heading);font-size:1.0625rem;line-height:2;color:var(--color-text);">
+            当店は先代から50年以上、地元・さいたま市南区で畳に携わり続けております。<br><br>
+            近年、和室の減少が目立ちますが、日本人が心から癒される"和"の空間は、非常に大切だと考えております。<br><br>
+            日本伝統の文化である和室の良さ、畳の良さを、もっと多くの皆様に伝えていきたいと思っております。<br><br>
+            皆様にとって畳替えは、一生のうちでも数えるほどしかない機会かと思います。<br><br>
+            その数少ない機会に、星野畳店をお選びいただいたすべてのお客様に、「星野畳店を選んで良かった」と思っていただけるよう、一生懸命に施工させていただきます。<br><br>
+            今後ともお引き立てのほど、よろしくお願い申し上げます。
+          </p>
+          <p style="margin-top:1.5rem;font-family:var(--font-heading);font-size:1rem;text-align:right;color:var(--color-text-sub);">
+            星野畳店　代表　<strong style="color:var(--color-text);font-size:1.125rem;">星野 勇</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 職人写真 -->
+  <section class="section">
+    <div class="container">
+      <div style="display:flex;gap:1.5rem;max-width:900px;margin:0 auto;">
+        <img src="src/images/craftsman1.jpg" alt="職人が機械で畳を加工している様子" style="width:50%;height:340px;object-fit:cover;border-radius:8px;">
+        <img src="src/images/craftsman2.jpg" alt="職人が畳を縫っている様子" style="width:50%;height:340px;object-fit:cover;border-radius:8px;">
+      </div>
+    </div>
+  </section>
+
+  <!-- 店舗情報 -->
+  <section class="section section-bg">
+    <div class="container">
+      <div style="max-width:720px;margin:0 auto;">
+        <span class="section-title-en">Shop Info</span>
+        <h2 class="section-title">店舗情報</h2>
+
+        <table style="width:100%;border-collapse:collapse;font-size:0.9375rem;">
+          <tbody>
+            <tr style="border-bottom:1px solid var(--color-border);">
+              <th style="padding:1rem;text-align:left;width:35%;color:var(--color-text-sub);font-weight:600;vertical-align:top;">店舗名</th>
+              <td style="padding:1rem;color:var(--color-text);">星野畳店</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--color-border);">
+              <th style="padding:1rem;text-align:left;color:var(--color-text-sub);font-weight:600;vertical-align:top;">代表者</th>
+              <td style="padding:1rem;color:var(--color-text);">星野 勇</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--color-border);">
+              <th style="padding:1rem;text-align:left;color:var(--color-text-sub);font-weight:600;vertical-align:top;">住所</th>
+              <td style="padding:1rem;color:var(--color-text);">
+                〒336-0022<br>
+                埼玉県さいたま市南区白幡6-1-18 吉本ビル1F
+              </td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--color-border);">
+              <th style="padding:1rem;text-align:left;color:var(--color-text-sub);font-weight:600;vertical-align:top;">電話</th>
+              <td style="padding:1rem;"><a href="tel:048-711-3222" style="color:var(--color-primary);font-weight:600;">048-711-3222</a></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--color-border);">
+              <th style="padding:1rem;text-align:left;color:var(--color-text-sub);font-weight:600;vertical-align:top;">FAX</th>
+              <td style="padding:1rem;color:var(--color-text);">048-711-3223</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--color-border);">
+              <th style="padding:1rem;text-align:left;color:var(--color-text-sub);font-weight:600;vertical-align:top;">メール</th>
+              <td style="padding:1rem;"><a href="mailto:hoshinotatamiten@gmail.com" style="color:var(--color-primary);font-weight:600;">hoshinotatamiten@gmail.com</a></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--color-border);">
+              <th style="padding:1rem;text-align:left;color:var(--color-text-sub);font-weight:600;vertical-align:top;">営業時間</th>
+              <td style="padding:1rem;color:var(--color-text);">8:00〜19:00（土日・祝日対応可）</td>
+            </tr>
+            <tr>
+              <th style="padding:1rem;text-align:left;color:var(--color-text-sub);font-weight:600;vertical-align:top;">事業内容</th>
+              <td style="padding:1rem;color:var(--color-text);">畳・襖・障子の張替え、加工、内装・外装リフォーム</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== お問い合わせCTA ========== -->
+  <section class="cta" aria-label="お問い合わせ">
+    <div class="container">
+      <div class="cta__deco"><span>✦</span></div>
+      <h2 class="cta__title">まずはお気軽にご相談ください</h2>
+      <p class="cta__text">見積もり・ご相談は無料です。<br>畳の見本帳をお持ちしてご自宅へお伺いします。</p>
+      <p class="cta__hours">営業時間 8:00〜19:00（土日・祝日も対応可）</p>
+      <div class="cta__buttons">
+        <a href="tel:048-711-3222" class="header__contact-tel cta__contact-btn">
+          📞 <span>048-711-3222</span>
+        </a>
+        <a href="contact.html" class="header__contact-btn header__contact-mail cta__contact-btn">
+          ✉ お問い合わせ
+        </a>
+        <a href="https://lin.ee/NYs3I5o" target="_blank" rel="noopener" class="header__contact-btn header__contact-line cta__contact-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:5px;"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+          LINE問い合わせ
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand-name">星野畳店</p>
+          <p class="footer__tagline">さいたま市で50年以上、地域とともに。</p>
+        </div>
+        <div>
+          <p class="footer__nav-title">Pages</p>
+          <ul class="footer__nav-list">
+            <li><a href="greeting.html">ごあいさつ・店舗紹介</a></li>
+            <li><a href="price.html">料金表</a></li>
+            <li><a href="flow.html">ご依頼の流れ</a></li>
+            <li><a href="ex.html">施工事例</a></li>
+            <li><a href="calmo.html">CALMOについて</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__nav-title">Access</p>
+          <div class="footer__info">
+            <p>〒336-0022</p>
+            <p>埼玉県さいたま市南区白幡6-1-18</p>
+            <p>TEL: <a href="tel:048-711-3222" style="color:#aaa;">048-711-3222</a></p>
+            <p>営業時間: 8:00〜19:00（土日・祝日可）</p>
+            <p><a href="mailto:hoshinotatamiten@gmail.com" style="color:#aaa;">hoshinotatamiten@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom"><p>© 2025 星野畳店 All Rights Reserved.</p></div>
+    </div>
+  </footer>
+
+  <a href="tel:048-711-3222" class="btn-call-fixed">📞 電話で問い合わせる（無料）</a>
+  <script src="src/js/main.js"></script>
+</body>
+</html>
