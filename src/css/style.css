@@ -1101,18 +1101,16 @@ ul, ol { list-style: none; }
 
 .footer__sns a {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  background: rgba(255,255,255,0.1);
-  border-radius: 50%;
+  gap: 0.3rem;
   color: var(--color-white);
-  font-size: 1rem;
-  transition: background var(--transition);
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: opacity var(--transition);
 }
 
-.footer__sns a:hover { background: var(--color-primary); }
+.footer__sns a:hover { opacity: 0.75; }
 
 .footer__nav-title {
   font-size: 0.875rem;
