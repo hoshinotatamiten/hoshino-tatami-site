@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hoshino-tatami-site.pages.dev/sitemap.xml
