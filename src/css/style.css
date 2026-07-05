@@ -1509,3 +1509,38 @@ ul, ol { list-style: none; }
     padding: 1rem 0.9rem !important;
   }
 }
+/* CALMOシリーズ スペック行：スマホでは説明文を全幅の段に */
+.calmo-spec-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.5rem 0.75rem;
+  margin-bottom: 0.6rem;
+}
+.calmo-spec-count {
+  font-size: 0.85rem;
+  color: var(--color-text-sub);
+  white-space: nowrap;
+  padding-top: 0.1rem;
+}
+.calmo-spec-note {
+  font-size: 0.72rem;
+  color: var(--color-text-sub);
+  line-height: 1.75;
+  flex-basis: 100%;
+  order: 3;
+}
+.calmo-spec-price {
+  color: var(--color-primary);
+  font-size: 1.1rem;
+  white-space: nowrap;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .calmo-spec-note {
+    flex-basis: auto;
+    flex: 1;
+    order: 0;
+    margin-left: 1.75rem;
+  }
+}
